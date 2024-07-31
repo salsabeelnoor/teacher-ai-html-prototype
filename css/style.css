@@ -53,92 +53,41 @@ a:focus, a:hover, a:active {
 }
 
 /*-------------------- button styles-------------------------*/
-.btn, .button-white, .button-secondary-outline, .button-secondary, .button-primary-outline, .button-primary {
+.btn {
   cursor: pointer;
   outline: none !important;
   font-weight: 400;
 }
-.btn:focus, .button-white:focus, .button-secondary-outline:focus, .button-secondary:focus, .button-primary-outline:focus, .button-primary:focus, .btn:hover, .button-white:hover, .button-secondary-outline:hover, .button-secondary:hover, .button-primary-outline:hover, .button-primary:hover, .btn:active, .button-white:active, .button-secondary-outline:active, .button-secondary:active, .button-primary-outline:active, .button-primary:active {
+.btn:focus, .btn:hover, .btn:active {
   outline: none !important;
 }
-.btn:active, .button-white:active, .button-secondary-outline:active, .button-secondary:active, .button-primary-outline:active, .button-primary:active {
+.btn:active {
   transform: translateY(2px);
 }
 
 .button {
   font-size: 16px;
 }
-.button-xs {
-  padding: 6px 12px;
-}
-.button-sm {
-  padding: 8px 20px;
-}
-.button-md {
-  padding: 12px 24px;
-}
-.button-lg {
-  padding: 16px 32px;
-}
 .button-primary {
-  border: 2px solid #002e72;
-  color: #fff;
-  background: #002e72;
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
 }
-.button-primary:is(:hover, :focus, :focus-visible) {
-  background-color: #002459;
+.button-primary:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
 }
-.button-primary-outline {
-  border: 2px solid #002e72;
-  color: #002e72;
-  background: transparent;
-}
-.button-primary-outline:is(:hover, :focus, :focus-visible) {
-  background: #002e72;
-  border: 2px solid #002e72;
-  color: #fff;
-}
-.button-secondary {
-  border: 2px solid #f6783a;
-  color: #fff;
-  background: #f6783a;
-}
-.button-secondary:is(:hover, :focus, :focus-visible) {
-  background-color: #f56722;
-}
-.button-secondary-outline {
-  background: transparent;
-  color: #3a3a3a;
-  border: 2px solid #fbc8ae;
-}
-.button-secondary-outline:is(:hover, :focus, :focus-visible) {
-  color: #fff;
-  background: #f6783a;
-  border-color: #f6783a;
-}
-.button-white {
-  background: #fff;
-  color: #0041a3;
-  border: 0px !important;
-}
-.button-white:is(:hover, :focus, :focus-visible) {
-  background: #fff;
-  color: #0041a3;
-  border: 0px !important;
-}
-.button-chips-rounded {
-  background: transparent;
-  color: #3a3a3a;
-  border-width: 1.5px 1px;
-  border-style: solid;
-  border-color: #3a3a3a;
-}
-.button-chips-rounded:is(:hover, :focus, :focus-visible) {
-  color: #fff;
-  background: #f6783a;
-  border-width: 1.5px 1px 1.5px 1px;
-  border-color: #f6783a;
-  outline: 0 !important;
+.button-primary:hover {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
 }
 
 .tab-button.active {
@@ -489,7 +438,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 ::selection {
   color: white;
-  background-color: #f6783a;
 }
 
 .wow {
@@ -567,7 +515,7 @@ input[type=number]::-webkit-inner-spin-button {
   top: 0;
   width: 100%;
   z-index: 49;
-  background-color: #E9E9E9;
+  background-color: #F1EFEF;
 }
 
 .nav-lists-mobile a {
@@ -582,11 +530,38 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .banner {
-  background-image: url("../../assets/banner-bg-2.jpg");
+  background: linear-gradient(#AFC2C6, rgba(0, 0, 0, 0.01));
   min-height: 100vh;
+  position: relative;
+}
+.banner__bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background-image: url("../../assets/banner-bg-3.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+}
+.banner__heading {
+  width: 650px;
+}
+.banner__heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+}
+.banner__heading--italic {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.banner__description {
+  width: 500px;
 }
 
 /*--------------------- components files -----------------------*/
