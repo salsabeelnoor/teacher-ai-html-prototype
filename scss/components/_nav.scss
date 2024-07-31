@@ -1,0 +1,88 @@
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $primary-white-100;
+  color: black;
+  width: 300px;
+  padding: 16px 0px;
+  z-index: 50;
+  box-shadow: 8px 0px 4px -6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+  .logo{
+    border: 2px solid red;
+    padding: 0px 24px;
+    &-teacher{
+      font-size: 52px;
+      line-height: 42px;
+      // letter-spacing: 5px;
+      // font-weight: 900;
+    }
+    &-ai{
+      font-size: 52px;
+      line-height: 42px;
+      letter-spacing: 5px;
+      font-weight: 900;
+    }
+  }
+  
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $primary-white-100;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $primary-white-200;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary-white-200;
+  }
+
+  @include laptop {
+    display: none;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 24px;
+    transition: color, background-color 0.3s ease;
+
+    &:hover {
+      color: $primary-white-400;
+      // background-color: rgba(0, 0, 0, 0.5);
+      border-right: 5px solid $primary-white-400;
+    }
+
+    &:is(:active, .active) {
+      color: black;
+      // background-color: $secondary-color-s300;
+    }
+  }
+}
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.nav-lists-mobile {
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 30px;
+    transition: color, background-color 0.3s ease;
+
+    &.active {
+      color: white;
+      background-color: $secondary-color-s300;
+    }
+  }
+}
