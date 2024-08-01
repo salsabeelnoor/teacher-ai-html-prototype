@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: $primary-white-200;
+  // background-color: $primary-white-200;
+  background-color: #61e7e414;
   color: black;
   width: 300px;
   padding: 16px -6px;
@@ -80,7 +81,7 @@
 
     &.active {
       color: white;
-      background-color: $secondary-color-s300;
+      background-color: #61e7e414;
     }
   }
 }

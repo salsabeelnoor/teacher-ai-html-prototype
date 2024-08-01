@@ -1,0 +1,28 @@
+.subject{
+   
+    .gradient{
+       
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 500px;
+        max-height: 550px;
+        display: flex;
+        background-image: radial-gradient(circle closest-side, rgba(33, 30, 205, .5), rgba(255, 255, 255, 0));
+    }
+    &__image{
+        filter: drop-shadow(20px 16px 5px #D2DDD7);
+        width: 475px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        width: 40%;
+    }
+}
