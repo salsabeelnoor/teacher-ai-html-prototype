@@ -1,15 +1,10 @@
-.subject{
-    max-height: 450px;
-    @include laptop{
-        max-height: fit-content;
-    }
+.learn{
     &__image{
-        max-height: 100%;
-        width: 40%;
+        width: 30%;
         @include laptop{
-            max-height: 50%;
             width: 100%;
         }
+        // border: 2px solid red;
         img{
             width: 100%;
             height: 100%;
@@ -24,12 +19,9 @@
         h1{
             font-family: "Playfair Display", serif;
             letter-spacing: 0.5px;
-            padding-bottom: 20px;
-            margin-bottom: 0;
             color: black;
         }
         p{
-            font-size: 16px;
             line-height: 28px;
         }
     }

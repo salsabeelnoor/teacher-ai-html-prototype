@@ -1,0 +1,119 @@
+.footer {
+    background-color: #E1EAF3;
+    gap: 0;
+    padding: 90px 0;
+    @include laptop{
+        // padding: 46px 0;
+        // gap: 42px;
+    }
+
+    // @include lg {
+    //     gap: 0;
+    //     padding: 90px 0;
+    // }
+
+    &__logo {
+        width: 45%;
+        @include desktop{
+            width: 40%;
+        }
+        @include laptop{
+            width: 100%;
+        }
+        h1{
+            font-family: "Playfair Display", serif;
+            letter-spacing: 0.5px;
+            color: black;
+        }
+        p {
+            // max-width: 463px;
+            color: $black-color-500;
+            line-height: 28px;
+
+            // @include sm {
+            //     max-width: auto;
+            // }
+
+            // @include lg {
+            //     padding-top: 45px;
+            // }
+        }
+    }
+
+    &__menu {
+        // width: 100%;
+        width: auto;
+        gap: 42px;
+        @include laptop {
+            width: 100%;
+        }
+
+        &__navigation {
+            flex-direction: row;
+            gap: 48px;
+            @include large-screen {
+                gap: 30px;
+            }
+            @include desktop {
+                gap: 24px;
+            }
+            @include laptop {
+                gap: 32px;
+            }
+            @include tablet {
+                flex-direction: row;
+                gap: 28px;
+            }
+            @include mobile{
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $black-color-500;
+                    // border: 2px solid red;
+                    &:hover{
+                        color: $blue-color-100;
+                        transform: translate(0px,-2px);
+                    }
+                }
+            }
+        }
+
+        &__social {
+            width: auto;
+            gap: 28px;
+            // width: 100%;
+            // gap: 0;
+
+            // @include sm {
+            //     width: auto;
+            //     gap: 28px;
+            // }
+
+            li {
+                a {
+                    text-decoration: none;
+                    width: 48px;
+                    height: 48px;
+                    transition: background-color 0.3s;
+                    svg{
+                        // stroke: $primary-white-400;
+                        fill: $primary-white-400;
+                        // color: $primary-white-400;
+                    }
+                    &:hover {
+                        background: $blue-color-100;
+                        svg{
+                            fill: white;
+                        }
+                        // background: $primary-p200;
+                    }
+                }
+            }
+        }
+    }
+}
