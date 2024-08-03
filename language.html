@@ -215,11 +215,11 @@
                     <div class="language-cards mt-5">
                         <div class="language-cards__wrapper d-flex flex-column">
                             <div class="language-cards__image">
-                                <img src="./assets/ai-text-5.png"
-                                    alt="Banner Game" class="banner__image">
+                                <img src="./assets/ai-text-5.png" alt="Banner Game" class="banner__image">
                             </div>
                             <div class="language-cards__content">
-                                <div class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
+                                <div
+                                    class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
                                     <div class="language-cards__info d-flex flex-column gap-1">
                                         <p class="title">Text</p>
                                         <p>Create text materials tailored to your requirements</p>
@@ -233,11 +233,11 @@
                         </div>
                         <div class="language-cards__wrapper d-flex flex-column">
                             <div class="language-cards__image">
-                                <img src="./assets/audio-ai.png"
-                                    alt="Banner Game" class="banner__image">
+                                <img src="./assets/audio-ai.png" alt="Banner Game" class="banner__image">
                             </div>
                             <div class="language-cards__content">
-                                <div class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
+                                <div
+                                    class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
                                     <div class="language-cards__info d-flex flex-column gap-1">
                                         <p class="title">Audio</p>
                                         <p>Create audio files customized to your needs</p>
@@ -251,11 +251,11 @@
                         </div>
                         <div class="language-cards__wrapper d-flex flex-column">
                             <div class="language-cards__image">
-                                <img src="./assets/pronunciation.jpeg"
-                                    alt="Banner Game" class="banner__image">
+                                <img src="./assets/pronunciation.jpeg" alt="Banner Game" class="banner__image">
                             </div>
                             <div class="language-cards__content">
-                                <div class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
+                                <div
+                                    class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
                                     <div class="language-cards__info d-flex flex-column gap-1">
                                         <p class="title">Pronunciation</p>
                                         <p>Assess pronunciation from free or text-based speech</p>
@@ -269,11 +269,11 @@
                         </div>
                         <div class="language-cards__wrapper d-flex flex-column">
                             <div class="language-cards__image">
-                                <img src="./assets/conversation.jpeg"
-                                    alt="Banner Game" class="banner__image">
+                                <img src="./assets/conversation.jpeg" alt="Banner Game" class="banner__image">
                             </div>
                             <div class="language-cards__content">
-                                <div class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
+                                <div
+                                    class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
                                     <div class="language-cards__info d-flex flex-column gap-1">
                                         <p class="title">Conversation</p>
                                         <p>Practice conversation with a virtual person, e.g. a teacher</p>
@@ -287,11 +287,11 @@
                         </div>
                         <div class="language-cards__wrapper d-flex flex-column">
                             <div class="language-cards__image">
-                                <img src="./assets/evaluation.png"
-                                    alt="Banner Game" class="banner__image">
+                                <img src="./assets/evaluation.png" alt="Banner Game" class="banner__image">
                             </div>
                             <div class="language-cards__content">
-                                <div class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
+                                <div
+                                    class="language-cards__content__body d-flex flex-column gap-3 justify-content-between align-items-start">
                                     <div class="language-cards__info d-flex flex-column gap-1">
                                         <p class="title">Evaluation</p>
                                         <p>Evaluation of documents, e.g. to evaluate exams</p>
@@ -304,24 +304,126 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="language-materials pt-4">
-                        <h2>--- Please Select A Category ---</h2>
+                    <div class="language-material d-flex flex-column flex-xl-row gap-5 pt-4 mb-5">
+                        <div class="language-material--left">
+                            <!-- <h2>--- Please Select A Category ---</h2> -->
+                            <div class="card-box description">
+                                <h2>Description</h2>
+                                <p> Creation of specifically customized textual teaching materials, where the learners'
+                                    level, the desired topic, the tense to be addressed, and the learning focus are
+                                    flexibly selectable - see the correspondingly color-marked selection fields on the
+                                    right.</p>
+                            </div>
+                            <div class="configure mt-3">
+                                <h2 class="fw-semibold">Configuration of the text mode</h2>
+                                <p class="pb-2">Click here to choose the text mode and then on the right the topic,
+                                    tense, length, and learning focus of the text --</p>
+                                <div class="field d-flex gap-4 align-items-center">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>1) Creating a worksheet</option>
+                                        <option value="1">2) Creating a quiz</option>
+                                        <option value="1">3) Creating an interactive presentation</option>
+                                        <option value="1">4) Creating a Dialogue Script</option>
+                                        <option value="1">5) Creating writing assignments</option>
+                                        <option value="1">6) Creating a new text based on document</option>
+                                        <option value="1">7) Creating an assignment based on document</option>
+                                    </select>
+                                </div>
+                                <div class="card-box description mt-4">
+                                    <p class="fw-semibold pb-2">Second, adjust the selected instruction to your needs:
+                                    </p>
+                                    <p> <span class="fw-semibold">TeacherAI role:</span> You are an experienced teacher
+                                        of the chosen language=<span class="highlight">German</span>. Analyze the
+                                        uploaded document. Generate three questions and answers in the chosen
+                                        tense=<span class="highlight">Imperative</span> and according to the chosen
+                                        learning focus= <span class="highlight">- no selection -</span>. Also, export
+                                        the result to a Word document that includes all questions and answers and
+                                        provide a link to download the document. Text length=Response length: <span class="highlight">auto</span> (as
+                                        needed).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="language-material--right">
+                            <!-- <h2>--- Please Select A Category ---</h2> -->
+                            <div class="card-box">
+                                <h2 class="pb-2">Specify your request</h2>
+                                <div class="field d-flex gap-4 align-items-center">
+                                    <label for="dropdown-one" class="fw-medium">Learning Focus :</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>- no selection -</option>
+                                        <option value="1">Regular verbs</option>
+                                        <option value="1">Irregular verbs</option>
+                                        <option value="1">Reflexive verbs</option>
+                                        <option value="1">Ser Vs Ester</option>
+                                        <option value="1">Modal Verbs</option>
+                                    </select>
+                                </div>
+                                <div class="field d-flex gap-4 align-items-center pt-3">
+                                    <label for="dropdown-one" class="fw-medium">Tense :</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>- no selection -</option>
+                                        <option value="1">Imperative</option>
+                                        <option value="1">Past</option>
+                                        <option value="1">Present</option>
+                                        <option value="1">Future</option>
+                                        <option value="1">conditional</option>
+                                    </select>
+                                </div>
+                                <div class="field d-flex gap-4 align-items-center pt-3">
+                                    <label for="dropdown-one" class="fw-medium">Topic :</label>
+                                    <input type="text" class="form-control" placeholder="Topic" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="field d-flex gap-4 align-items-center pt-3">
+                                    <label for="dropdown-one" class="fw-medium">Length :</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Auto</option>
+                                        <option value="1">Max 15 words</option>
+                                        <option value="1">Max 25 words</option>
+                                        <option value="1">Max 30 words</option>
+                                        <option value="1">Max 50 words</option>
+                                        <option value="1">Max 100 words</option>
+                                    </select>
+                                </div>
+                                <div class="field d-flex gap-4 align-items-center pt-3">
+                                    <label for="dropdown-one" class="fw-medium">Model :</label>
+                                    <select class="form-select width-auto" aria-label="Default select example">
+                                        <option selected>GPT-4o ("o" for "omni") is our most used</option>
+                                        <option value="1">New GPT-4 Turbo. The latest GPT-4</option>
+                                        <option value="1">GPT-4 Turbo Model featuring improved</option>
+                                        <option value="1">GPT-4 with the ability to understand</option>
+                                        <option value="1">gpt-3.5-turbo-1106</option>
+                                    </select>
+                                </div>
+                                <div class="field checkbox pt-3">
+                                    <p class="pb-2 text-black">To support mix classes with Ukrainian students:</p>
+                                    <div class="form-check d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Add text instructions in Ukrainian language
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Add audio instructions in Ukrainian language
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+
                 </div>
-            </div>
-
-
-        </main>
 
 
 
-        <!-- bootstrap min js -->
-        <script src="libs/bootstarp/bootstrap@5.3.1_bundle.min.js"></script>
+                <!-- bootstrap min js -->
+                <script src="libs/bootstarp/bootstrap@5.3.1_bundle.min.js"></script>
 
-        <!-- footer nav min js -->
-        <script src="js/footer-nav.js"></script>
+                <!-- footer nav min js -->
+                <script src="js/footer-nav.js"></script>
 </body>
 
 </html>

@@ -139,7 +139,13 @@ a {
   background: linear-gradient(#AFC2C6, rgba(0,0,0,.01));
 }
 
-
+input.form-control, select{
+  border: 1px solid $orange-color-200;
+    &:focus {
+      border: 1px solid $orange-color-200;
+      box-shadow: 0 0 0 .25rem $orange-color-50;
+    }
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;

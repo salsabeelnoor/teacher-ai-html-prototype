@@ -154,4 +154,71 @@
         }
 
     }
+    &-material{
+        .card-box{
+            width: 100%;
+            // border: 2px solid red;
+            padding: 16px;
+            border-radius: 12px;
+            
+            background-color: #FFEFE4;
+            box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+            h2{
+                font-weight: 600;
+            }
+        }
+        &--left{
+            width: 50%;
+            @include desktop{
+                width: 100%;
+            }
+            .description{
+                max-height: 180px;
+                overflow: auto;
+            }
+            
+        }
+        &--right{
+            width: 50%;
+            @include desktop{
+                width: 100%;
+            }
+            h2{
+                font-weight: 600;
+            }
+            .field{
+                label{
+                    width: 150px;
+                }
+                select, input{
+                    max-width: 250px;
+                }
+                .width-auto{
+                    width: fit-content;
+                    max-width: 390px;
+                    @include mobile{
+                        max-width: 206px;
+                    }
+                }
+                &.checkbox{
+                    .form-check {
+                        label{
+                            color: #000;
+                            width: fit-content;
+                            max-width: 100%;
+                        }
+                        input.form-check-input{
+                            border: 1px solid $orange-color-200;
+                            &:focus {
+                                box-shadow: 0 0 0 .25rem $orange-color-50;
+                            }
+                            &:checked{
+                                background-color: $orange-color-300;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
