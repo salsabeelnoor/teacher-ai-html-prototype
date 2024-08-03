@@ -1,0 +1,34 @@
+.page-banner{
+    background-color: $blue-color-50;
+    height: fit-content;
+    .wrapper{
+        padding-top: 48px;
+        @include laptop{
+            padding-top: 68px;
+        }
+    }
+    &__content{
+        width: 50%;
+        @include laptop{
+            width: 100%;
+        }
+        h1{
+            font-family: "Playfair Display", serif;
+            letter-spacing: 0.5px;
+        }
+          p{
+            line-height: 28px;
+          }
+    }
+    &__image{
+        width: 50%;
+        @include laptop{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

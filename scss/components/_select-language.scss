@@ -1,0 +1,157 @@
+.language {
+    &-select {
+        select.form-select {
+            width: 150px;
+        }
+    }
+
+    p.language-label {
+        font-size: 18px;
+        font-weight: 600;
+        @include laptop{
+            font-size: 16px;
+        }
+    }
+
+    select.form-select {
+        border: 1px solid $orange-color-200;
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem $orange-color-50;
+        }
+
+        option {
+            &:hover {
+                box-shadow: 0 0 10px 100px #18a830 inset;
+            }
+        }
+    }
+
+    &__flag {
+        width: 50px;
+        height: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+        // height: 280px;
+        @include large-screen{
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 24px;
+            column-gap: 26px;
+        }
+        @include desktop{
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        @include mobile{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+            column-gap: 0px;
+        }
+        
+        &__wrapper {
+            // border: 2px solid $orange-color-300;
+            // position: relative;
+            // overflow: hidden;
+            // width: 100%;
+            border-radius: 12px;
+            padding: 8px;
+            background-color: #ffefe4;
+            height: 100%;
+
+        }
+        &__image {
+            // position: relative;
+            width: 100%;
+            height: 120px;
+            img{
+                border-radius: 12px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__content {
+            &__body{
+                width: 100%;
+                padding: 8px;
+                // background-color: #252525;
+                
+                border-top: 0px;
+                border-radius: 0px 0px 12px 12px;
+            }
+        }
+
+        &__info {
+            gap: 10px;
+            .title {
+                color: #000;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            
+            p {
+                color: #000;
+                font-size: 13px;
+                font-weight: 400;
+            }
+            
+        }
+        
+        &__avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        button {
+            outline: none;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            background-color: $orange-color-275;
+            font-weight: 400;
+            color: #fff;
+            font-family: inherit;
+            cursor: pointer;
+            transition: 0.3s all ease;
+
+            span {
+                font-size: 12px;
+                color: #656565;
+            }
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+
+        
+
+        
+
+        .banner img {
+            
+        }
+
+    }
+}
