@@ -1,5 +1,5 @@
 .footer {
-    background-color: #E1EAF3;
+    // background-color: #E1EAF3;
     gap: 0;
     padding: 90px 0;
     @include laptop{
@@ -23,11 +23,11 @@
         h1{
             font-family: "Playfair Display", serif;
             letter-spacing: 0.5px;
-            color: black;
+            // color: black;
         }
         p {
             // max-width: 463px;
-            color: $black-color-500;
+            // color: $black-color-500;
             line-height: 28px;
 
             // @include sm {
@@ -73,7 +73,7 @@
                 a {
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: $black-color-500;
+                    // color: $black-color-500;
                     // border: 2px solid red;
                     &:hover{
                         color: $blue-color-100;

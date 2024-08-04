@@ -43,6 +43,9 @@
         }
         &--description{
             width: 559px;
+            p{
+                color: black;
+            }
             @include laptop{
                 width: 100%;
             }
