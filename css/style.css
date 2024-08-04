@@ -83,6 +83,25 @@ a:focus, a:hover, a:active {
   background: #f98642;
   backdrop-filter: blur(15.9499998093px);
 }
+.button-chips {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f98642;
+  font-weight: 400;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.button-chips:hover {
+  opacity: 0.8;
+}
+.button-chips:active {
+  transform: scale(0.9);
+}
 
 .section {
   padding-block: 80px;
@@ -141,12 +160,27 @@ a:focus, a:hover, a:active {
   background: linear-gradient(#AFC2C6, rgba(0, 0, 0, 0.01));
 }
 
-input.form-control, select {
+input.form-control, select, textarea.form-control {
   border: 1px solid #FD9556;
 }
-input.form-control:focus, select:focus {
+input.form-control:focus, select:focus, textarea.form-control:focus {
   border: 1px solid #FD9556;
   box-shadow: 0 0 0 0.25rem #FFD9C2;
+}
+
+textarea.form-control {
+  resize: none;
+}
+textarea.form-control::-webkit-scrollbar {
+  width: 6px;
+}
+textarea.form-control::-webkit-scrollbar-track {
+  -webkit-box-shadow: #E9E9E9;
+}
+textarea.form-control::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-color: #ffc996;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -927,29 +961,6 @@ input[type=number]::-webkit-inner-spin-button {
   height: 35px;
   border-radius: 10px;
   object-fit: cover;
-}
-.language-cards button {
-  outline: none;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 14px;
-  background-color: #f98642;
-  font-weight: 400;
-  color: #fff;
-  font-family: inherit;
-  cursor: pointer;
-  transition: 0.3s all ease;
-}
-.language-cards button span {
-  font-size: 12px;
-  color: #656565;
-}
-.language-cards button:hover {
-  opacity: 0.8;
-}
-.language-cards button:active {
-  transform: scale(0.9);
 }
 .language-material .card-box {
   width: 100%;
