@@ -89,7 +89,7 @@ a:focus, a:hover, a:active {
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 14px;
-  background-color: #f98642;
+  background-color: #ff9454;
   font-weight: 400;
   color: #fff;
   font-family: inherit;
@@ -97,7 +97,8 @@ a:focus, a:hover, a:active {
   transition: 0.3s all ease;
 }
 .button-chips:hover {
-  opacity: 0.8;
+  background-color: #f98642;
+  color: #fff;
 }
 .button-chips:active {
   transform: scale(0.9);
@@ -926,6 +927,10 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 8px;
   background-color: #ffefe4;
   height: 100%;
+  transition: all 0.2s ease-in;
+}
+.language-cards__wrapper:hover {
+  box-shadow: #FFD9C2 0px 4px 12px;
 }
 .language-cards__image {
   width: 100%;
@@ -984,6 +989,9 @@ input[type=number]::-webkit-inner-spin-button {
   max-height: 180px;
   overflow: auto;
 }
+.language-material--left textarea.form-control:disabled {
+  background-color: #fff5ef;
+}
 .language-material--right {
   width: 50%;
 }
@@ -998,7 +1006,8 @@ input[type=number]::-webkit-inner-spin-button {
 .language-material--right .field label {
   width: 150px;
 }
-.language-material--right .field select, .language-material--right .field input {
+.language-material--right .field select,
+.language-material--right .field input {
   max-width: 250px;
 }
 .language-material--right .field .width-auto {

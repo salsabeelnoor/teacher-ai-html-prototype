@@ -99,14 +99,15 @@ a {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 14px;
-    background-color: $orange-color-275;
+    background-color: $orange-color-250;
     font-weight: 400;
     color: #fff;
     font-family: inherit;
     cursor: pointer;
     transition: 0.3s all ease;
     &:hover {
-        opacity: 0.8;
+      background-color: $orange-color-275;
+      color: #fff;
     }
     &:active {
         transform: scale(0.9);
