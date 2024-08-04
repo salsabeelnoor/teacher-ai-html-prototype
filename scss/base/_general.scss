@@ -12,7 +12,7 @@ body {
   position: relative;
   font-family: "Open Sans", sans-serif;
   // font-family: "Playfair Display", serif;
-  // color: $dark-color-d200;
+  color: #fff;
   background: $white;
   font-size: 16px;
   &::-webkit-scrollbar {
@@ -77,8 +77,8 @@ a {
     padding: 12px 28px;
     border: 1px solid transparent;
     border-radius: 6px;
-    background: $orange-color-250;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    background: $orange-color-275;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     transition: background 0.2s ease-in;
     cursor: pointer;
     
@@ -89,7 +89,7 @@ a {
       // border: 1px solid #FFF;
       border-radius: 6px;
       border: 1px solid $orange-color-275;
-      background: $orange-color-275;
+      background: $orange-color-400;
       backdrop-filter: blur(15.949999809265137px);
      }
   }
@@ -125,11 +125,12 @@ a {
     h1{
       font-family: "Playfair Display", serif;
       letter-spacing: 0.5px;
-      color: black;
+      color: #fff;
     }
     p{
       font-size: 16px;
       line-height: 28px;
+      color: #fff;
     }
   }
 }

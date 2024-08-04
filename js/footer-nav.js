@@ -23,8 +23,7 @@ function navScrollFunction() {
       navbar.style.backgroundColor = "transparent";
       navbarMobile.classList.remove("on-scroll");
       navbarMobile.style.backgroundColor = "transparent";
-      // if(screen.width <  992 && !offcanvas.classList.contains('show')){
-      // }
+      
     }
 
 }
