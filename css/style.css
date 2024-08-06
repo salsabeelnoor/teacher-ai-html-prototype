@@ -170,7 +170,7 @@ input.form-control, select, textarea.form-control {
 }
 input.form-control:focus, select:focus, textarea.form-control:focus {
   border: 1px solid #FD9556;
-  box-shadow: 0 0 0 0.25rem #c2d2e2;
+  box-shadow: 0 0 4px 1px #abddf3;
 }
 
 textarea.form-control {
@@ -1428,6 +1428,56 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--right .field.checkbox .form-check input.form-check-input:checked {
   background-color: #f2782f;
+}
+
+.login {
+  min-height: 100vh;
+  background-color: #081f35;
+}
+.login__content {
+  width: 450px;
+}
+.login__content .input {
+  width: 80%;
+}
+.login__content .input-email {
+  position: relative;
+}
+.login__content .input-email svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+}
+.login__content .input-password {
+  position: relative;
+  width: 80%;
+}
+.login__content .input-password svg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  fill: #fff;
+}
+.login__content input.form-control {
+  padding-left: 34px;
+  color: #fff;
+  border: 1px solid #6B9BA9;
+  background-color: #031425;
+  caret-color: #fff;
+}
+.login__content input.form-control::placeholder {
+  color: gray;
+}
+.login__content__button {
+  width: 80%;
+}
+.login__content__button button {
+  padding: 8px 0px;
+  width: 100%;
 }
 
 /*--------------------- components files -----------------------*/

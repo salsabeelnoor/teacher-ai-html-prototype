@@ -1,0 +1,57 @@
+.login{
+    min-height: 100vh;
+    background-color: $blue-color-350;
+    
+    &__content{
+        // border: 2px solid green;
+        width: 450px;
+        .input{
+            // border: 2px solid red;
+            // width: 100%;
+            width: 80%;
+            &-email{
+                position: relative;
+                svg{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 8px;
+                
+                }
+            }
+            &-password{
+                position: relative;
+                width: 80%;
+                svg{
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 8px;
+                    fill: #fff;
+                
+                }
+            }
+        }
+        input.form-control{
+            padding-left: 34px;
+            color: #fff;
+            
+            border: 1px solid $blue-color-100;
+            background-color: #031425;
+            caret-color: #fff; 
+            &::placeholder{
+                color: gray;
+            }
+        }
+        &__button{
+            width: 80%;
+            // border: 2px solid red;
+            button{
+                padding: 8px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
