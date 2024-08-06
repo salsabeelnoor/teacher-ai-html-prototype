@@ -92,7 +92,7 @@ a:focus, a:hover, a:active {
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 14px;
-  background-color: #ff9454;
+  background-color: #ff5c00;
   font-weight: 400;
   color: #fff;
   font-family: inherit;
@@ -100,7 +100,7 @@ a:focus, a:hover, a:active {
   transition: 0.3s all ease;
 }
 .button-chips:hover {
-  background-color: #f98642;
+  background-color: #f2782f;
   color: #fff;
 }
 .button-chips:active {
@@ -108,7 +108,7 @@ a:focus, a:hover, a:active {
 }
 
 .section {
-  padding-block: 80px;
+  padding-top: 80px;
 }
 .section__header {
   width: 500px;
@@ -170,7 +170,7 @@ input.form-control, select, textarea.form-control {
 }
 input.form-control:focus, select:focus, textarea.form-control:focus {
   border: 1px solid #FD9556;
-  box-shadow: 0 0 0 0.25rem #FFD9C2;
+  box-shadow: 0 0 0 0.25rem #c2d2e2;
 }
 
 textarea.form-control {
@@ -265,16 +265,13 @@ input[type=number]::-webkit-inner-spin-button {
 .nav-mobile .navbar-nav li a {
   color: #000;
 }
-.nav-mobile .navbar-nav li a:is(:active, .active, :hover) {
-  color: #f2782f;
-}
 .nav-mobile .navbar-nav .dropdown-menu {
-  --bs-dropdown-bg: #FFD9C2;
+  --bs-dropdown-bg: #c2d2e2;
 }
 .nav-mobile .navbar-nav .dropdown-item:hover {
-  background-color: transparent;
+  background-color: rgba(245, 245, 245, 0.58);
 }
-.nav-mobile .navbar-nav .dropdown-item:active {
+.nav-mobile .navbar-nav .dropdown-item:is(:active, :focus) {
   background-color: #ffccae;
 }
 .nav-mobile__button {
@@ -286,15 +283,48 @@ input[type=number]::-webkit-inner-spin-button {
   height: 100%;
 }
 .nav-mobile .offcanvas {
-  background-color: #e1eaf3;
+  background-color: #030022;
+}
+.nav-mobile .offcanvas-title {
+  width: 100%;
 }
 .nav-mobile .offcanvas-body {
   overflow-y: auto;
-  background: #e1eaf3;
+  background: #030022;
   min-height: 100vh;
+}
+.nav-mobile .offcanvas-body a {
+  color: #fff;
+  margin: 8px 16px;
+  background: #11101d;
+  border-radius: 4px;
+}
+.nav-mobile .offcanvas-body a:hover {
+  background: #ff5c00;
+}
+.nav-mobile .offcanvas-header button {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+}
+.nav-mobile .offcanvas-header button svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+  stroke: #fff;
 }
 .nav-mobile .offcanvas.offcanvas-start {
   width: 250px;
+}
+.nav-mobile.inner-page:not(.on-scroll) .navbar-nav li a {
+  color: #fff;
+}
+.nav-mobile.inner-page:not(.on-scroll) .navbar-nav li a.dropdown-item {
+  color: #000;
+}
+.nav-mobile.inner-page:not(.on-scroll) .nav-mobile__button svg {
+  fill: #fff;
 }
 .nav-mobile.on-scroll {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -332,7 +362,6 @@ input[type=number]::-webkit-inner-spin-button {
   position: sticky;
   left: 0;
   top: 0;
-  height: 100%;
   height: 100vh;
   width: 80px;
   background: #030022;
@@ -1088,6 +1117,22 @@ input[type=number]::-webkit-inner-spin-button {
   color: #000;
   background-color: rgba(245, 245, 245, 0.1215686275);
 }
+.top-navbar .navbar-collapse .navbar-nav.inner-page p {
+  color: #fff;
+}
+.top-navbar .navbar-collapse .navbar-nav.inner-page a {
+  color: #fff;
+}
+.top-navbar .navbar-collapse .navbar-nav.inner-page a.dropdown-item {
+  color: #000;
+}
+.top-navbar .navbar-collapse .navbar-nav.inner-page a:is(:active, .active, :hover) {
+  color: #fff;
+  background-color: rgba(245, 245, 245, 0.1215686275);
+}
+.top-navbar .navbar-collapse .navbar-nav.inner-page svg {
+  fill: #fff;
+}
 .top-navbar .navbar-collapse .user-img {
   padding: 0;
   width: 40px;
@@ -1134,10 +1179,10 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
 }
 .top-navbar .navbar-collapse .dropdown-menu {
-  --bs-dropdown-bg: #FFD9C2;
+  --bs-dropdown-bg: #c2d2e2;
 }
 .top-navbar .navbar-collapse .dropdown-item:hover {
-  background-color: transparent;
+  background-color: rgba(245, 245, 245, 0.58);
 }
 .top-navbar .navbar-collapse .dropdown-item:active {
   background-color: #ffccae;
@@ -1149,6 +1194,19 @@ input[type=number]::-webkit-inner-spin-button {
   top: -50px;
   animation: navAnimate 0.5s forwards ease-in;
 }
+.top-navbar.on-scroll .navbar-nav.inner-page p {
+  color: #000;
+}
+.top-navbar.on-scroll .navbar-nav.inner-page a {
+  color: #000;
+}
+.top-navbar.on-scroll .navbar-nav.inner-page a:is(:active, .active, :hover) {
+  color: #000;
+  background-color: rgba(245, 245, 245, 0.1215686275);
+}
+.top-navbar.on-scroll .navbar-nav.inner-page svg {
+  fill: #000;
+}
 
 @keyframes navAnimate {
   to {
@@ -1156,7 +1214,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .page-banner {
-  background-color: #abddf3;
+  background-color: #081f35;
   height: fit-content;
 }
 .page-banner .wrapper {
@@ -1212,10 +1270,7 @@ input[type=number]::-webkit-inner-spin-button {
   border: 1px solid #FD9556;
 }
 .language select.form-select:focus {
-  box-shadow: 0 0 0 0.25rem #FFD9C2;
-}
-.language select.form-select option:hover {
-  box-shadow: 0 0 10px 100px #18a830 inset;
+  box-shadow: 0 0 4px 1px #abddf3;
 }
 .language__flag {
   width: 50px;
@@ -1261,12 +1316,12 @@ input[type=number]::-webkit-inner-spin-button {
 .language-cards__wrapper {
   border-radius: 12px;
   padding: 8px;
-  background-color: #ffefe4;
+  background-color: #c2d2e2;
   height: 100%;
   transition: all 0.2s ease-in;
 }
 .language-cards__wrapper:hover {
-  box-shadow: #FFD9C2 0px 4px 12px;
+  box-shadow: #c2d2e2 0px 4px 5px;
 }
 .language-cards__image {
   width: 100%;
@@ -1307,11 +1362,15 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   padding: 16px;
   border-radius: 12px;
-  background-color: #FFEFE4;
+  background-color: #c2d2e2;
   box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 .language-material .card-box h2 {
   font-weight: 600;
+  color: #000;
+}
+.language-material .card-box p {
+  color: #000;
 }
 .language-material--left {
   width: 50%;
@@ -1341,6 +1400,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--right .field label {
   width: 150px;
+  color: #000;
 }
 .language-material--right .field select,
 .language-material--right .field input {
@@ -1364,7 +1424,7 @@ input[type=number]::-webkit-inner-spin-button {
   border: 1px solid #FD9556;
 }
 .language-material--right .field.checkbox .form-check input.form-check-input:focus {
-  box-shadow: 0 0 0 0.25rem #FFD9C2;
+  box-shadow: 0 0 0 0.25rem #c2d2e2;
 }
 .language-material--right .field.checkbox .form-check input.form-check-input:checked {
   background-color: #f2782f;

@@ -18,14 +18,14 @@
         border: 1px solid $orange-color-200;
 
         &:focus {
-            box-shadow: 0 0 0 .25rem $orange-color-50;
+            box-shadow: 0 0 4px 1px $blue-color-50;
         }
 
-        option {
-            &:hover {
-                box-shadow: 0 0 10px 100px #18a830 inset;
-            }
-        }
+        // option {
+        //     &:hover {
+        //         box-shadow: 0 0 10px 100px #18a830 inset;
+        //     }
+        // }
     }
 
     &__flag {
@@ -71,12 +71,12 @@
         &__wrapper {
             border-radius: 12px;
             padding: 8px;
-            background-color: #ffefe4;
+            background-color: $blue-color-25;
             height: 100%;
             transition: all 0.2s ease-in;
 
             &:hover {
-                box-shadow: $orange-color-50 0px 4px 12px;
+                box-shadow: $blue-color-25 0px 4px 5px;
             }
 
         }
@@ -139,11 +139,15 @@
             width: 100%;
             padding: 16px;
             border-radius: 12px;
-            background-color: #FFEFE4;
+            background-color: $blue-color-25;
             box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 
             h2 {
                 font-weight: 600;
+                color: #000;
+            }
+            p{
+                color: #000;
             }
         }
 
@@ -181,6 +185,7 @@
             .field {
                 label {
                     width: 150px;
+                    color: #000;
                 }
 
                 select,
@@ -209,7 +214,7 @@
                             border: 1px solid $orange-color-200;
 
                             &:focus {
-                                box-shadow: 0 0 0 .25rem $orange-color-50;
+                                box-shadow: 0 0 0 .25rem $blue-color-25;
                             }
 
                             &:checked {
