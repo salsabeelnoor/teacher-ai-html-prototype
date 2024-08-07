@@ -1163,6 +1163,16 @@ input[type=number]::-webkit-inner-spin-button {
   color: #000;
   background-color: rgba(245, 245, 245, 0.1215686275);
 }
+@media (max-width: 575px) {
+  .top-navbar .navbar-collapse .navbar-nav li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .top-navbar .navbar-collapse .navbar-nav li a {
+    font-size: 18px;
+  }
+}
 .top-navbar .navbar-collapse .navbar-nav.inner-page p {
   color: #fff;
 }
