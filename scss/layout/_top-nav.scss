@@ -24,8 +24,9 @@
             }
             @include mobile{
               font-size: 16px;
+              padding-inline: 12px;
             }
-            @include mobile{
+            @include tablet{
               font-size: 18px;
             }
           }
@@ -53,7 +54,6 @@
       
 
       .dropdown {
-
         &-menu{
           --bs-dropdown-bg: #c2d2e2;
         }
