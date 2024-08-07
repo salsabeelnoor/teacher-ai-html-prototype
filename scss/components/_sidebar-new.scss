@@ -151,7 +151,7 @@
     transition: all 0.4s ease;
     background: #11101d;
   }
-  .sidebar li a:hover {
+  .sidebar li a:is(:hover, :active, .active) {
     background: $orange-color-400;
   }
   .sidebar li a .links_name {
@@ -167,8 +167,8 @@
     opacity: 1;
     pointer-events: auto;
   }
-  .sidebar li a:hover .links_name,
-  .sidebar li a:hover i {
+  .sidebar li a:is(:hover, :active, .active) .links_name,
+  .sidebar li a:is(:hover, :active, .active) i {
     transition: all 0.5s ease;
     color: #11101d;
   }

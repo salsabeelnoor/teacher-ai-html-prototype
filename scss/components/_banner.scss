@@ -1,6 +1,4 @@
 .banner{
-    // linear-gradient(rgba(0,0,0,.01), rgba(0,0,0,.01)),
-    // background: linear-gradient(#AFC2C6, rgba(0,0,0,.01));
     background-image: linear-gradient(to bottom, rgb(217 137 96 / 76%), rgb(166 166 166 / 0%)), url('../../assets/ai-banner-4.jpeg');
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -15,7 +13,7 @@
         background-color: rgba(255, 255, 255, 0.15);
         border-image: linear-gradient(to right, rgb(255 201 150)  0%, rgba(225, 225, 225, 1) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
         backdrop-filter: blur(8.649999618530273px);
-        padding-block: 16px 30px;
+        padding-block: 16px 40px;
         padding-inline: 8px;
         border-radius: 12px;
         @include laptop{
