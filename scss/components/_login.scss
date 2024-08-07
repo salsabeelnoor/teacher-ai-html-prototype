@@ -3,12 +3,14 @@
     background-color: $blue-color-350;
     
     &__content{
-        // border: 2px solid green;
         width: 450px;
+        @include mobile{
+            padding: 0px 16px;
+            width: 100%;
+        }
         .input{
-            // border: 2px solid red;
-            // width: 100%;
             width: 80%;
+            
             &-email{
                 position: relative;
                 svg{
@@ -16,7 +18,8 @@
                     top: 50%;
                     transform: translateY(-50%);
                     left: 8px;
-                
+                    stroke: $dark-color-d75;
+                    -webkit-text-stroke-color: $dark-color-d75;
                 }
             }
             &-password{
@@ -33,6 +36,7 @@
                 
                 }
             }
+            
         }
         input.form-control{
             padding-left: 34px;
@@ -42,7 +46,23 @@
             background-color: #031425;
             caret-color: #fff; 
             &::placeholder{
-                color: gray;
+                color: $dark-color-d75;
+            }
+        }
+        &-terms{
+            p{
+                font-size: 14px;
+                color: $dark-color-d50;
+                a{
+                    position: relative;
+                    border-bottom: 1px solid ;
+                    transition: color 0.2s ease;
+                    // transform: translateY(-1px);
+                    color: rgb(13,202,240);
+                    &:hover{
+                        color: white;
+                    }
+                }
             }
         }
         &__button{
