@@ -99,7 +99,7 @@ a {
   &-chips{
     outline: none;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 14px;
     border-radius: 10px;
     font-size: 14px;
     background-color: $orange-color-400;
@@ -177,12 +177,19 @@ a {
       border-color: #555 transparent transparent transparent;
       transform: rotate(180deg);
     }
+    @include mobile{
+      font-size: 14px;
+    }
   }
   
   &:hover .user-tooltip {
-    
     visibility: visible;
     opacity: 1;
+  }
+
+  @include mobile{
+    width: 30px;
+    height: 30px;
   }
 }
 .separator{

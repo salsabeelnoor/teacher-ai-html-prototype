@@ -26,33 +26,26 @@
 <body>
     <section class="d-flex flex-column flex-lg-row">
         <!-- sidebar for large screen -->
-        <div class="sidebar d-none d-lg-block">
+        <div class="sidebar d-none d-lg-block open">
             <div class="logo-details">
                 <i class='bx bxl-codepen icon'></i>
                 <div class="logo_name">TeacherAI.</div>
-                <i class='bx bx-menu' id="btn"></i>
+                <i class='bx bx-menu-alt-right' id="btn"></i>
             </div>
             <ul class="nav-list p-0">
                 <li>
-                    <a href="index.html" >
+                    <a href="index.html">
                         <i class='bx bx-home-alt'></i>
                         <span class="links_name">Home</span>
                     </a>
                     <span class="tooltip">Home</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="language.html" class="active">
                         <i class='bx bx-chat'></i>
-                        <span class="links_name">Text to speech</span>
+                        <span class="links_name">Languages</span>
                     </a>
-                    <span class="tooltip">Text to speech</span>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-chat'></i>
-                        <span class="links_name">Interactive Speech Js</span>
-                    </a>
-                    <span class="tooltip">Interactive Speech Js</span>
+                    <span class="tooltip">Languages</span>
                 </li>
                 <li>
                     <a href="#">
@@ -110,15 +103,6 @@
                     </a>
                     <span class="tooltip">Art and Design</span>
                 </li>
-                <!-- <li class="profile">
-                <div class="profile-details">
-                  <i class='bx bx-export'></i>
-                  <div class="name_job">
-                    <div class="name">Logout</div>
-                  </div>
-                </div>
-                <i class='bx bx-log-out' id="log_out"></i>
-              </li> -->
             </ul>
         </div>
 
@@ -150,7 +134,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About</a>
+                                <a class="nav-link" aria-current="page" href="#">$0.00</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Pricing</a>
                             </li>
                             <li class="nav-item">
                                 <div class="user-img">
@@ -199,11 +186,9 @@
                         </div>
                         <div class="nav-lists-mobile offcanvas-body d-flex flex-column px-0 pt-0">
                             <a class="d-inline-block py-2 h5 fw-normal" href="index.html">Home</a>
+                            <a class="d-inline-block py-2 h5 fw-normal" href="language.html">languages</a>
                             <a class="d-inline-block py-2 h5 fw-normal" href="#intro">About</a>
                             <a class="d-inline-block py-2 h5 fw-normal" href="#intro">Login</a>
-                            <a class="d-inline-block py-2 h5 fw-normal" href="#start">Text to Speech</a>
-                            <a class="d-inline-block py-2 h5 fw-normal" href="#html">Interactive Speech</a>
-                            <a class="d-inline-block py-2 h5 fw-normal" href="#scss">Interactive Speech Js</a>
                             <a class="d-inline-block py-2 h5 fw-normal" href="#js">History</a>
                             <a class="d-inline-block py-2 h5 fw-normal" href="#fonts">Mathematics</a>
                             <a class="d-inline-block py-2 h5 fw-normal" href="#colors">Biology</a>
@@ -245,7 +230,10 @@
                                 <a class="nav-link" aria-current="page" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Credit</a>
+                                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">$0.00</a>
                             </li>
                             <li class="nav-item">
                                 <div class="user-img">
@@ -333,9 +321,9 @@
                                         <p class="title">Text</p>
                                         <p>Create text materials tailored to your requirements</p>
                                     </div>
-                                    <div class="language-cards__button d-flex justify-content-start gap-4">
+                                    <div class="language-cards__button d-flex justify-content-start gap-3">
                                         <a id="select-btn" class="button-chips">Select</a>
-                                        <!-- <a class="button-chips">Info</a> -->
+                                        <a id="info-btn" class="button-chips">Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -351,9 +339,9 @@
                                         <p class="title">Audio</p>
                                         <p>Create audio files customized to your needs</p>
                                     </div>
-                                    <div class="language-cards__button d-flex justify-content-start gap-4">
+                                    <div class="language-cards__button d-flex justify-content-start gap-3">
                                         <a class="button-chips">Select</a>
-                                        <!-- <a class="button-chips">Info</a> -->
+                                        <a class="button-chips">Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -369,9 +357,9 @@
                                         <p class="title">Pronunciation</p>
                                         <p>Assess pronunciation from free or text-based speech</p>
                                     </div>
-                                    <div class="language-cards__button d-flex justify-content-start gap-4">
+                                    <div class="language-cards__button d-flex justify-content-start gap-3">
                                         <a class="button-chips">Select</a>
-                                        <!-- <a class="button-chips">Info</a> -->
+                                        <a class="button-chips">Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -387,9 +375,9 @@
                                         <p class="title">Conversation</p>
                                         <p>Practice conversation with a virtual person, e.g. a teacher</p>
                                     </div>
-                                    <div class="language-cards__button d-flex justify-content-start gap-4">
+                                    <div class="language-cards__button d-flex justify-content-start gap-3">
                                         <a class="button-chips">Select</a>
-                                        <!-- <a class="button-chips">Info</a> -->
+                                        <a class="button-chips">Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -405,9 +393,9 @@
                                         <p class="title">Evaluation</p>
                                         <p>Evaluation of documents, e.g. to evaluate exams</p>
                                     </div>
-                                    <div class="language-cards__button d-flex justify-content-start gap-4">
+                                    <div class="language-cards__button d-flex justify-content-start gap-3">
                                         <a class="button-chips">Select</a>
-                                        <!-- <a class="button-chips">Info</a> -->
+                                        <a class="button-chips">Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -415,20 +403,21 @@
                     </div>
 
                     <div class="language-material pt-4 mb-5">
-                        <h2 id="select-cat-text" class="pb-5">--- Please Select A Category ---</h2>
+                        <!-- <h2 id="select-cat-text" class="pb-5">--- Please Select A Category ---</h2> -->
+                        <div id="description-box" class="d-none card-box description mb-3">
+                            <h2>Description</h2>
+                            <p> Creation of specifically customized textual teaching materials, where the
+                                learners'
+                                level, the desired topic, the tense to be addressed, and the learning focus are
+                                flexibly selectable - see the correspondingly color-marked selection fields on
+                                the
+                                right.</p>
+                        </div>
                         <div id="language-material" class="d-none d-flex flex-column flex-xl-row gap-5">
                             <div class="language-material--left">
-                                <div class="card-box description">
-                                    <h2>Description</h2>
-                                    <p> Creation of specifically customized textual teaching materials, where the
-                                        learners'
-                                        level, the desired topic, the tense to be addressed, and the learning focus are
-                                        flexibly selectable - see the correspondingly color-marked selection fields on
-                                        the
-                                        right.</p>
-                                </div>
-                                <div class="configure mt-3">
-                                    <h2 class="fw-semibold">Configuration of the text mode</h2>
+
+                                <div class="configure">
+                                    <p class="fw-semibold title">Configuration of the text mode</p>
                                     <p class="pb-2">Click here to choose the text mode and then on the right the topic,
                                         tense, length, and learning focus of the text --</p>
                                     <div class="field d-flex gap-4 align-items-center">
@@ -453,7 +442,7 @@
                             </div>
                             <div class="language-material--right">
                                 <div class="card-box">
-                                    <h2 class="pb-2">Specify your request</h2>
+                                    <p class="pb-2 title">Specify your request</p>
                                     <div class="field d-flex gap-4 align-items-center">
                                         <label for="dropdown-one" class="fw-medium">Learning Focus :</label>
                                         <select class="form-select" aria-label="Default select example">

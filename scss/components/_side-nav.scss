@@ -67,6 +67,10 @@
           // color: $orange-color-300;
           // border-right: 5px solid $orange-color-200;
         }
+        @include mobile{
+          font-size: 14px;
+          padding-inline: 2px;
+        }
       }
     }
     .dropdown{

@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Unlock Your Potential With SkillMentor">
-  <meta name="keywords"
-    content="skillmentor, skill, mentor, skill development, course, course price, skillMentor classes, skillmentor reviews">
+  <meta name="keywords" content="skillmentor, skill, mentor, skill development, course, course price, skillMentor classes, skillmentor reviews">
 
   <!-- bootstrap css links -->
   <link rel="stylesheet" href="./libs/bootstarp/bootstrap@5.3.1_min.css">
@@ -25,11 +24,12 @@
 <body>
   <!-- sidebar for large screen -->
   <section class="d-flex flex-column flex-lg-row">
-    <div class="sidebar d-none d-lg-block">
+
+    <div class="sidebar d-none d-lg-block open">
       <div class="logo-details">
         <i class='bx bxl-codepen icon'></i>
         <div class="logo_name">TeacherAI.</div>
-        <i class='bx bx-menu' id="btn"></i>
+        <i class='bx bx-menu-alt-right' id="btn"></i>
       </div>
       <ul class="nav-list p-0">
         <li>
@@ -40,18 +40,11 @@
           <span class="tooltip">Home</span>
         </li>
         <li>
-          <a href="#">
+          <a href="language.html">
             <i class='bx bx-chat'></i>
-            <span class="links_name">Text to speech</span>
+            <span class="links_name">Languages</span>
           </a>
-          <span class="tooltip">Text to speech</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-chat'></i>
-            <span class="links_name">Interactive Speech Js</span>
-          </a>
-          <span class="tooltip">Interactive Speech Js</span>
+          <span class="tooltip">Languages</span>
         </li>
         <li>
           <a href="#">
@@ -120,6 +113,7 @@
         </li> -->
       </ul>
     </div>
+
     <!-- nav for small devices -->
     <nav id="nav-mobile" class="nav-mobile d-block d-lg-none text-white px-3 py-2">
       <div class="">
@@ -148,6 +142,9 @@
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Pricing</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Login</a>
@@ -185,12 +182,10 @@
                     </div>
                 </div>
                   <div class="nav-lists-mobile offcanvas-body d-flex flex-column px-0">
-                      <a class="d-inline-block py-2 h5 fw-normal" href="#intro">Home</a>
+                      <a class="d-inline-block py-2 h5 fw-normal" href="index.html">Home</a>
+                      <a class="d-inline-block py-2 h5 fw-normal" href="language.html">Languages</a>
                       <a class="d-inline-block py-2 h5 fw-normal" href="#intro">About</a>
                       <a class="d-inline-block py-2 h5 fw-normal" href="#intro">Login</a>
-                      <a class="d-inline-block py-2 h5 fw-normal" href="#start">Text to Speech</a>
-                      <a class="d-inline-block py-2 h5 fw-normal" href="#html">Interactive Speech</a>
-                      <a class="d-inline-block py-2 h5 fw-normal" href="#scss">Interactive Speech Js</a>
                       <a class="d-inline-block py-2 h5 fw-normal" href="#js">History</a>
                       <a class="d-inline-block py-2 h5 fw-normal" href="#fonts">Mathematics</a>
                       <a class="d-inline-block py-2 h5 fw-normal" href="#colors">Biology</a>
@@ -215,7 +210,7 @@
                 <a class="nav-link" aria-current="page" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Credit</a>
+                <a class="nav-link" aria-current="page" href="#">Pricing</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link no-bar" href="login.html">Login</a>
@@ -246,42 +241,39 @@
         <div class=" d-flex flex-column align-items-center justify-content-center">
           <div class="section__header ">
             <h1 class="text-center">What We Offer</h1>
-            <p class="text-center">Our goal is to help you create the next generation of teaching with the latest
-              advances in machine intelligence.</p>
+            <p class="text-center">The next generation of teaching with the latest advanced in artificial intelligence.</p>
           </div>
         </div>
         <div class="features">
           <div class="features__card">
             <div class="features__card__content">
-              <h2 class="heading">Text</h2>
-              <p class="data-content">Create text materials tailored to your requirements
-  
+              <h2 class="heading">Materials</h2>
+              <p class="data-content">Generate teaching material in text & audio format.</p>
+            </div>
+          </div>
+          <div class="features__card">
+            <div class="features__card__content">
+              <h2 class="heading">Activities</h2>
+              <p class="data-content">Generate teaching activities.</p>
+            </div>
+          </div>
+          <div class="features__card">
+            <div class="features__card__content">
+              <h2 class="heading">Conversations</h2>
+              <p class="data-content">Lead conversations and learn how to improve.</p>
               </p>
             </div>
           </div>
           <div class="features__card">
             <div class="features__card__content">
-              <h2 class="heading">Images</h2>
-              <p class="data-content">Generate text based on images or soon generate images.</p>
+              <h2 class="heading">Evaluation</h2>
+              <p class="data-content">Compare documents to evaluate exams.</p>
             </div>
           </div>
           <div class="features__card">
             <div class="features__card__content">
-              <h2 class="heading">Audio</h2>
-              <p class="data-content">Create audio files customized to your needs </p>
-              </p>
-            </div>
-          </div>
-          <div class="features__card">
-            <div class="features__card__content">
-              <h2 class="heading">Pronunciation</h2>
-              <p class="data-content">Assess pronunciation from free or text-based speech</p>
-            </div>
-          </div>
-          <div class="features__card">
-            <div class="features__card__content">
-              <h2 class="heading">Conversation</h2>
-              <p class="data-content">Practice conversation with a virtual person, e.g. a teacher</p>
+              <h2 class="heading">Diversity</h2>
+              <p class="data-content">Facilitate teaching for heterogeneous classes.</p>
             </div>
           </div>
         </div>
@@ -492,15 +484,15 @@
         </div>
       </footer>
     </main>
+
   </section>
-
-
 
   <!-- bootstrap min js -->
   <script src="libs/bootstarp/bootstrap@5.3.1_bundle.min.js"></script>
 
   <!-- footer nav min js -->
   <script src="js/footer-nav.js"></script>
+
   <script src="js/sidebar-new.js"></script>
 </body>
 

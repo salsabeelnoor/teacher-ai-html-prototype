@@ -23,7 +23,7 @@
               background-color: #f5f5f51f;
             }
             @include mobile{
-              font-size: 16px;
+              font-size: 14px;
               padding-inline: 12px;
             }
             @include tablet{
@@ -50,9 +50,6 @@
           }
         }
       }
-      
-      
-
       .dropdown {
         &-menu{
           --bs-dropdown-bg: #c2d2e2;
