@@ -86,13 +86,9 @@
         &__social {
             width: auto;
             gap: 28px;
-            // width: 100%;
-            // gap: 0;
-
-            // @include sm {
-            //     width: auto;
-            //     gap: 28px;
-            // }
+            @include mobile{
+                gap: 18px;
+            }
 
             li {
                 a {

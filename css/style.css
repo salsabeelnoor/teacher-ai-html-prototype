@@ -395,20 +395,6 @@ input[type=number]::-webkit-inner-spin-button {
   top: -50px;
   animation: navAnimate 0.5s forwards ease-in;
 }
-.nav-mobile::-webkit-scrollbar {
-  width: 6px;
-  height: 4px;
-}
-.nav-mobile::-webkit-scrollbar-track {
-  background: #F1EFEF;
-}
-.nav-mobile::-webkit-scrollbar-thumb {
-  background: #CCC8AA;
-  border-radius: 20px;
-}
-.nav-mobile::-webkit-scrollbar-thumb:hover {
-  background: #CCC8AA;
-}
 
 .nav-lists-mobile a {
   font-size: 16px;
@@ -710,7 +696,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 991px) {
   .banner__content {
-    padding-inline: 16px;
+    padding-inline: 10px;
     width: 100%;
   }
 }
@@ -1121,6 +1107,11 @@ input[type=number]::-webkit-inner-spin-button {
   width: auto;
   gap: 28px;
 }
+@media (max-width: 575px) {
+  .footer__menu__social {
+    gap: 18px;
+  }
+}
 .footer__menu__social li a {
   text-decoration: none;
   width: 48px;
@@ -1162,15 +1153,15 @@ input[type=number]::-webkit-inner-spin-button {
   color: #000;
   background-color: rgba(245, 245, 245, 0.1215686275);
 }
+@media (max-width: 1199px) {
+  .top-navbar .navbar-collapse .navbar-nav li a {
+    font-size: 18px;
+  }
+}
 @media (max-width: 575px) {
   .top-navbar .navbar-collapse .navbar-nav li a {
     font-size: 14px;
     padding-inline: 12px;
-  }
-}
-@media (max-width: 767px) {
-  .top-navbar .navbar-collapse .navbar-nav li a {
-    font-size: 18px;
   }
 }
 .top-navbar .navbar-collapse .navbar-nav.inner-page p {
@@ -1277,8 +1268,18 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 16px;
   }
 }
+@media (max-width: 575px) {
+  .language p.language-label {
+    font-size: 14px;
+  }
+}
 .language select.form-select {
   border: 1px solid #FD9556;
+}
+@media (max-width: 575px) {
+  .language select.form-select {
+    font-size: 14px;
+  }
 }
 .language select.form-select:focus {
   box-shadow: 0 0 4px 1px #abddf3;
@@ -1286,6 +1287,12 @@ input[type=number]::-webkit-inner-spin-button {
 .language__flag {
   width: 50px;
   height: 30px;
+}
+@media (max-width: 575px) {
+  .language__flag {
+    width: 37px;
+    height: 25px;
+  }
 }
 .language__flag img {
   width: 100%;

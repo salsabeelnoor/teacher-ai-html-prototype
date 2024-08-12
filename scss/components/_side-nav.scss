@@ -155,20 +155,6 @@
     top: -50px;
     animation: navAnimate 0.5s forwards ease-in;
   }
-  &::-webkit-scrollbar {
-    width: 6px;
-    height: 4px;
-  }
-  &::-webkit-scrollbar-track {
-    background: $primary-white-100;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: $primary-white-300;
-    border-radius: 20px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: $primary-white-300;
-  }
 }
 .nav-lists-mobile {
   a {

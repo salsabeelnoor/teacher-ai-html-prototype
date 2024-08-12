@@ -12,11 +12,16 @@
         @include laptop {
             font-size: 16px;
         }
+        @include mobile {
+            font-size: 14px;
+        }
     }
 
     select.form-select {
         border: 1px solid $orange-color-200;
-
+        @include mobile{
+            font-size: 14px;
+        }
         &:focus {
             box-shadow: 0 0 4px 1px $blue-color-50;
         }
@@ -31,6 +36,10 @@
     &__flag {
         width: 50px;
         height: 30px;
+        @include mobile{
+            width: 37px;
+            height: 25px;
+        }
 
         img {
             width: 100%;
