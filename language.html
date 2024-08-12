@@ -394,7 +394,7 @@
                         </div>
                     </div>
 
-                    <div class="language-material pt-4 mb-5">
+                    <div class="language-material pt-4 mb-4">
                         <!-- <h2 id="select-cat-text" class="pb-5">--- Please Select A Category ---</h2> -->
                         <div id="description-box" class="d-none card-box description mb-3">
                             <h2>Description</h2>
@@ -428,6 +428,17 @@
                                         </p>
                                         <textarea class="form-control" rows="5" disabled
                                             aria-label="With textarea">TeacherAI role: You are an experienced teacher of the chosen language=German. Analyze the uploaded document. Generate three questions and answers in the chosen tense=Imperative and according to the chosen learning focus= - no selection -. Also, export the result to a Word document that includes all questions and answers and provide a link to download the document. Text length=Response length: auto (as needed). </textarea>
+                                    </div>
+                                </div>
+                                <div class="start-btn mt-2">
+                                    <div class="start-btn__text">
+                                        <p>Press 'Start Assessment' and read out loud: </p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nesciunt?
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 mt-2">
+                                        <button id="start-btn" class="button-primary">Start Assessment</button>
+                                        <div class="circle "></div>
                                     </div>
                                 </div>
                             </div>
@@ -499,6 +510,26 @@
                                             </label>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="language-output" class="d-none language-output mb-5">
+                        <div class="language-output__button d-flex gap-4 mb-3">
+                            <button class="button-chips">Regenerate Text</button>
+                            <button class="button-chips">Replay</button>
+                        </div>
+                        <div class="language-output__result d-flex flex-column flex-lg-row gap-4">
+                            <div class="language-output__result__number d-flex gap-4">
+                                <p class="score-label">Score:</p>
+                                <span class="score-number">29%</span>
+                            </div>
+                            <div class="language-output__result__text">
+                                <p class="fw-semibold title">Pronunciation Assessment Results: </p>
+                                <div class="card-box result-text">
+                                    <p class="title-sm text-uppercase fw-medium mb-2">Recognized Text</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis nemo totam
+                                        tenetur, excepturi pariatur mollitia delectus necessitatibus maiores ipsa?</p>
                                 </div>
                             </div>
                         </div>

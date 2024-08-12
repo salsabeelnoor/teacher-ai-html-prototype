@@ -82,10 +82,16 @@ a:focus, a:hover, a:active {
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
-.button-primary:active {
+.button-primary:disabled {
+  cursor: auto;
+  background: #73706e;
+  color: #e7e7e7;
+  box-shadow: rgb(73, 73, 73) 3.2px 3.2px 8px 0px inset, rgb(163, 163, 163) -3.2px -3.2px 8px 0px inset;
+}
+.button-primary:not(:disabled):active {
   transform: translateY(0.1rem);
 }
-.button-primary:hover {
+.button-primary:not(:disabled):hover {
   border-radius: 6px;
   border: 1px solid #f98642;
   color: #000;
@@ -681,7 +687,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .banner {
-  background-image: linear-gradient(to bottom, rgba(217, 137, 96, 0.76), rgba(166, 166, 166, 0)), url("../../assets/ai-banner-4.jpeg");
+  background-image: linear-gradient(to bottom, rgba(217, 137, 96, 0.76), rgba(166, 166, 166, 0)), url("../assets/ai-banner-4.jpeg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1281,6 +1287,27 @@ input[type=number]::-webkit-inner-spin-button {
 .language-select select.form-select {
   width: 150px;
 }
+.language .card-box {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #c2d2e2;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+.language .card-box .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.language .card-box .title-sm {
+  font-size: 16px;
+}
+.language .card-box h2 {
+  font-weight: 600;
+  color: #000;
+}
+.language .card-box p {
+  color: #000;
+}
 .language p.language-label {
   font-size: 18px;
   font-weight: 600;
@@ -1398,24 +1425,6 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 10px;
   object-fit: cover;
 }
-.language-material .card-box {
-  width: 100%;
-  padding: 16px;
-  border-radius: 12px;
-  background-color: #c2d2e2;
-  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-}
-.language-material .card-box .title {
-  font-size: 24px;
-  font-weight: 600;
-}
-.language-material .card-box h2 {
-  font-weight: 600;
-  color: #000;
-}
-.language-material .card-box p {
-  color: #000;
-}
 .language-material .description {
   max-height: 180px;
   overflow: auto;
@@ -1439,6 +1448,18 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--left textarea.form-control:disabled {
   background-color: #fff5ef;
+}
+.language-material--left .start-btn__text p {
+  font-size: 14px;
+}
+.language-material--left .start-btn .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #c2d2e2;
+  border-radius: 50%;
+}
+.language-material--left .start-btn .circle--green {
+  background-color: #198754;
 }
 .language-material--right {
   width: 50%;
@@ -1481,6 +1502,20 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--right .field.checkbox .form-check input.form-check-input:checked {
   background-color: #f2782f;
+}
+.language-output__result__number .score-number {
+  font-size: 72px;
+  line-height: 56px;
+}
+.language-output__result .result-text {
+  width: 40%;
+  max-height: 180px;
+  overflow: auto;
+}
+@media (max-width: 991px) {
+  .language-output__result .result-text {
+    width: 100%;
+  }
 }
 
 .login {
