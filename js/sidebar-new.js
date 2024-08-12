@@ -10,10 +10,10 @@ closeBtn.addEventListener("click", () => {
 
 function menuBtnChange() {
   if (sidebar.classList.contains("open")) {
-    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-    sidebar.style.overflowY="auto";
+    closeBtn.classList.replace("fa-bars", "fa-bars-staggered");
+    // sidebar.style.overflowY="auto";
   } else {
-    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-    sidebar.style.overflowY="visible";
+    closeBtn.classList.replace("fa-bars-staggered", "fa-bars");
+    // sidebar.style.overflowY="visible";
   }
 }

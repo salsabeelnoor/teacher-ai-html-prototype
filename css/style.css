@@ -98,6 +98,32 @@ a:focus, a:hover, a:active {
   opacity: 0.9;
   backdrop-filter: blur(15.9499998093px);
 }
+.button-secondary {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #ff5c00;
+  color: #e7e7e7;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.button-secondary:disabled {
+  cursor: auto;
+  background: #73706e;
+  color: #e7e7e7;
+  box-shadow: rgb(73, 73, 73) 3.2px 3.2px 8px 0px inset, rgb(163, 163, 163) -3.2px -3.2px 8px 0px inset;
+}
+.button-secondary:not(:disabled):active {
+  transform: translateY(0.1rem);
+}
+.button-secondary:not(:disabled):hover {
+  border-radius: 6px;
+  opacity: 0.9;
+  backdrop-filter: blur(15.9499998093px);
+}
 .button-chips {
   outline: none;
   border: none;
@@ -429,7 +455,6 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
-  overflow-y: auto;
 }
 .sidebar::-webkit-scrollbar {
   width: 6px;
@@ -468,6 +493,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 .sidebar .logo-details .icon {
   opacity: 0;
+  font-size: 18px;
+  padding-right: 8px;
   transition: all 0.5s ease;
 }
 
@@ -487,8 +514,8 @@ input[type=number]::-webkit-inner-spin-button {
 .sidebar .logo-details #btn {
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 22px;
   transition: all 0.4s ease;
   font-size: 23px;
@@ -498,16 +525,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .sidebar.open .logo-details #btn {
+  right: 0;
+  transform: translate(0, -50%);
   text-align: right;
 }
 
 .sidebar i {
   color: #fff;
-  height: 60px;
-  min-width: 50px;
-  font-size: 28px;
   text-align: center;
-  line-height: 60px;
 }
 
 .sidebar .nav-list {
@@ -573,6 +598,8 @@ input[type=number]::-webkit-inner-spin-button {
   text-decoration: none;
   transition: all 0.4s ease;
   background: #11101d;
+  gap: 17px;
+  padding: 12px 16px;
 }
 
 .sidebar li a:is(:hover, :active, .active) {
@@ -601,10 +628,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .sidebar li i {
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  border-radius: 12px;
+  font-size: 17px;
 }
 
 .sidebar li.profile {
@@ -712,17 +736,12 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
   }
 }
-.banner__content--heading {
-  background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 .banner__content--heading h1 {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 62px;
   text-align: center;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   color: black;
 }
 @media (max-width: 1399px) {

@@ -23,16 +23,16 @@
             width: 100%;
         }
         &--heading{
-            background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            // background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
+            // -webkit-text-fill-color: transparent;
+            // background-clip: text;
             h1{
-                // font-family: "Playfair Display", serif;
-                font-family: 'Satoshi', sans-serif;
+                font-family: "Playfair Display", serif;
+                // font-family: 'Satoshi', sans-serif;
                 font-size: 62px;
                 text-align: center;
                 color: white;
-                font-weight: 600;
+                font-weight: 400;
                 color: black;
                 @include large-screen{
                     font-size: 58px;
