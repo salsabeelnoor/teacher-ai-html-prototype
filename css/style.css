@@ -3,6 +3,12 @@
 /*----------------------- base files --------------------------*/
 /*------------------------ Merriweather and open sans -------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700; /* Adjust the weight based on the font style */
+  font-style: normal;
+}
 /*-------------------- general styles-------------------------------*/
 * {
   margin: 0;
@@ -700,21 +706,37 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
   }
 }
+.banner__content--heading {
+  background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .banner__content--heading h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Satoshi", sans-serif;
   font-size: 62px;
   text-align: center;
-  font-weight: 400;
+  color: white;
+  font-weight: 600;
   color: black;
+}
+@media (max-width: 1399px) {
+  .banner__content--heading h1 {
+    font-size: 58px;
+  }
 }
 @media (max-width: 991px) {
   .banner__content--heading h1 {
     font-size: 52px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .banner__content--heading h1 {
     font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .banner__content--heading h1 {
+    font-size: 36px;
   }
 }
 .banner__content--heading--italic {
