@@ -6,10 +6,12 @@ const languageMaterial = document.getElementById('language-material');
 const languageOutput = document.getElementById('language-output');
 const startBtn = document.getElementById('start-btn');
 const startCircle = document.querySelector('.circle');
+const assessmentBtn = document.getElementById('assessment-btn');
 console.log(startCircle)
 selectBtn.addEventListener('click', () => {
     languageMaterial.classList.toggle('d-none');
     description.classList.add('d-none');
+    assessmentBtn.classList.toggle('d-none');
 })
 infoBtn.addEventListener('click', () => {
     description.classList.toggle('d-none');

@@ -193,22 +193,7 @@
                     background-color: $orange-color-25;
                 }
             }
-            .start-btn{
-                &__text{
-                    p{
-                        font-size: 14px;
-                    }
-                }
-                .circle{
-                    width: 20px;
-                    height: 20px;
-                    background-color: $blue-color-25;
-                    border-radius: 50%;
-                    &--green{
-                        background-color: $green-color;
-                    }
-                }
-            }
+            
 
         }
 
@@ -264,6 +249,22 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .start-btn{
+        &__text{
+            p{
+                font-size: 14px;
+            }
+        }
+        .circle{
+            width: 20px;
+            height: 20px;
+            background-color: $blue-color-25;
+            border-radius: 50%;
+            &--green{
+                background-color: $green-color;
             }
         }
     }

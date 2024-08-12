@@ -1449,18 +1449,6 @@ input[type=number]::-webkit-inner-spin-button {
 .language-material--left textarea.form-control:disabled {
   background-color: #fff5ef;
 }
-.language-material--left .start-btn__text p {
-  font-size: 14px;
-}
-.language-material--left .start-btn .circle {
-  width: 20px;
-  height: 20px;
-  background-color: #c2d2e2;
-  border-radius: 50%;
-}
-.language-material--left .start-btn .circle--green {
-  background-color: #198754;
-}
 .language-material--right {
   width: 50%;
 }
@@ -1502,6 +1490,18 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--right .field.checkbox .form-check input.form-check-input:checked {
   background-color: #f2782f;
+}
+.language .start-btn__text p {
+  font-size: 14px;
+}
+.language .start-btn .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #c2d2e2;
+  border-radius: 50%;
+}
+.language .start-btn .circle--green {
+  background-color: #198754;
 }
 .language-output__result__number .score-number {
   font-size: 72px;
