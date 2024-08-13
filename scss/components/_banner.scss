@@ -1,65 +1,39 @@
 .banner{
-    background-image: linear-gradient(to bottom, rgb(217 137 96 / 76%), rgb(166 166 166 / 0%)), url('../assets/ai-banner-4.jpeg');
-    // background-image: linear-gradient(to bottom, rgb(217 137 96 / 76%), rgb(166 166 166 / 0%)), url('../assets/banner-img.jpg');
     min-height: 100vh;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-color: $blue-color-380;
+    background-image: url('../../assets/bg-hero-section.svg');
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    &--wrapper{
+        // border: 2px solid red;
+    }
     &__content{
-        width: 750px;
-        border-width: 2px;
-        border-style: solid;
-        box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15);
-        background-color: rgba(255, 255, 255, 0.15);
-        border-image: linear-gradient(to right, rgb(255 201 150)  0%, rgba(225, 225, 225, 1) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
-        backdrop-filter: blur(8.649999618530273px);
-        padding-block: 16px 40px;
-        padding-inline: 8px;
-        border-radius: 12px;
-        @include laptop{
-            // padding-block: 10px 30px;
-            padding-inline: 10px;
+        width: 50%;
+        h1{
+            font-family: 'Satoshi Bold';
+            font-size: 52px;
+            line-height: 58px;
+            span{
+                display: inline-block;
+                animation: slideLeft 1.5s forwards;
+                opacity: 0;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+        button{
+            width: fit-content;
+        }
+    }
+    &__image{
+        width: 50%;
+        height: 100%;
+        img{
             width: 100%;
-        }
-        &--heading{
-            // background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
-            // -webkit-text-fill-color: transparent;
-            // background-clip: text;
-            h1{
-                font-family: "Playfair Display", serif;
-                // font-family: 'Satoshi', sans-serif;
-                font-size: 62px;
-                text-align: center;
-                color: white;
-                font-weight: 400;
-                color: black;
-                @include large-screen{
-                    font-size: 58px;
-                }
-                @include laptop{
-                    font-size: 52px;
-                }
-                @include tablet{
-                    font-size: 42px;
-                }
-                @include mobile{
-                    font-size: 36px;
-                }
-            }
-            &--italic{
-                letter-spacing: 1px;
-                font-weight: 500;
-            }
-        }
-        &--description{
-            width: 559px;
-            p{
-                color: black;
-            }
-            @include laptop{
-                width: 100%;
-            }
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
+
