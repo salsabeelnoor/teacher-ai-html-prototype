@@ -28,5 +28,5 @@ function navScrollFunction() {
 
 }
 document.addEventListener("scroll", () => {
-  // navScrollFunction();
+  navScrollFunction();
 });
