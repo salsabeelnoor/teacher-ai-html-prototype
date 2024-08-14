@@ -841,15 +841,57 @@ input[type=number]::-webkit-inner-spin-button {
   background-size: cover;
 }
 .banner--wrapper {
-  padding-top: 60px;
+  padding-top: 100px;
+}
+@media (max-width: 1399px) {
+  .banner--wrapper {
+    padding-top: 123px;
+  }
+}
+@media (max-width: 991px) {
+  .banner--wrapper {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 575px) {
+  .banner--wrapper {
+    padding-top: 0px;
+  }
 }
 .banner__content {
   width: 50%;
+}
+@media (max-width: 1399px) {
+  .banner__content {
+    width: 80%;
+  }
+}
+@media (max-width: 1199px) {
+  .banner__content {
+    width: 90%;
+  }
+}
+@media (max-width: 991px) {
+  .banner__content {
+    width: 100%;
+  }
 }
 .banner__content h1 {
   font-family: "Satoshi Bold";
   font-size: 52px;
   line-height: 58px;
+}
+@media (max-width: 767px) {
+  .banner__content h1 {
+    line-height: 53px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .banner__content h1 {
+    font-size: 38px;
+    line-height: 53px;
+  }
 }
 .banner__content h1 span {
   display: inline-block;
@@ -862,8 +904,36 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__image {
   width: 50%;
-  height: 90%;
+  height: 600px;
   position: relative;
+}
+@media (max-width: 1399px) {
+  .banner__image {
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .banner__image {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .banner__image {
+    width: 75%;
+    height: 450px;
+  }
+}
+@media (max-width: 575px) {
+  .banner__image {
+    display: none;
+  }
+}
+.banner__image img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .banner__image::before {
   content: "";
@@ -873,16 +943,23 @@ input[type=number]::-webkit-inner-spin-button {
   right: 0;
   width: 500px;
   height: 500px;
+  transform: scale(-1, 1);
   background: rgba(73, 90, 133, 0.368627451);
   border-radius: 24% 76% 35% 65%/27% 36% 64% 73%;
   z-index: 1;
 }
-.banner__image img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media (max-width: 767px) {
+  .banner__image::before {
+    top: 30px;
+    right: -30px;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .banner__image::before {
+    display: none;
+  }
 }
 
 :root {

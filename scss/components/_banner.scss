@@ -1,4 +1,4 @@
-.banner{
+.banner {
     min-height: 100vh;
     width: 100%;
     background-color: $blue-color-380;
@@ -6,52 +6,109 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    &--wrapper{
-        padding-top: 60px;
+
+    &--wrapper {
+        padding-top: 100px;
+        @include large-screen {
+            padding-top: 123px;
+        }
+        @include laptop{
+            padding-top:100px;
+        }
+        @include mobile{
+            padding-top: 0px;
+        }
     }
-    &__content{
+
+    &__content {
         width: 50%;
-        h1{
+        @include large-screen{
+            width: 80%;
+        }
+        @include desktop{
+            width: 90%;
+        }
+        @include laptop{
+            width: 100%;
+        }
+        h1 {
             font-family: 'Satoshi Bold';
             font-size: 52px;
             line-height: 58px;
-            span{
+            @include tablet{
+                line-height: 53px;
+                font-size: 42px;
+            }
+            @include mobile{
+                font-size: 38px;
+                line-height: 53px;
+            }
+            span {
                 display: inline-block;
                 animation: slideLeft 1.5s forwards;
                 opacity: 0;
-                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);            
             }
         }
-        button{
+
+        button {
             width: fit-content;
         }
     }
-    &__image{
-        // border: 2px solid red;
+
+    &__image {
         width: 50%;
-        height: 90%;
+        height: 600px;
         position: relative;
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            top: 10px;
-            right: 0;
-            width: 500px;
-           height: 500px;
-            background: #495a855e;
-            // mix-blend-mode: color-dodge;
-            border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-            z-index: 1;
+        @include large-screen {
+            width: 70%;
         }
-        img{
+        @include laptop {
+            width: 90%;
+        }
+        @include tablet {
+            width: 75%;
+            height: 450px;
+        }
+        @include mobile{
+            display: none;
+        }
+        // @include laptop {
+        //     width: 100%;
+        //     // height: auto;
+        // }
+        img {
             position: relative;
             z-index: 2;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            transform: scale(-1, 1);
+            background: #495a855e;
+            border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+            z-index: 1;
+            
+            @include tablet{
+                top: 30px;
+                right: -30px;
+                width: 300px;
+                height: 300px;
+            }
+            @include mobile{
+                display: none;
+            }
+        }
+
         
+
     }
 }
-
