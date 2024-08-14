@@ -4,24 +4,29 @@
             width: 150px;
         }
     }
+
     .card-box {
         width: 100%;
         padding: 16px;
         border-radius: 12px;
         background-color: $blue-color-25;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-        .title{
+
+        .title {
             font-size: 24px;
             font-weight: 600;
-            &-sm{
+
+            &-sm {
                 font-size: 16px;
             }
         }
+
         h2 {
             font-weight: 600;
             color: #000;
         }
-        p{
+
+        p {
             color: #000;
         }
     }
@@ -33,6 +38,7 @@
         @include laptop {
             font-size: 16px;
         }
+
         @include mobile {
             font-size: 14px;
         }
@@ -40,9 +46,11 @@
 
     select.form-select {
         border: 1px solid $orange-color-200;
-        @include mobile{
+
+        @include mobile {
             font-size: 14px;
         }
+
         &:focus {
             box-shadow: 0 0 4px 1px $blue-color-50;
         }
@@ -57,7 +65,8 @@
     &__flag {
         width: 50px;
         height: 30px;
-        @include mobile{
+
+        @include mobile {
             width: 37px;
             height: 25px;
         }
@@ -165,7 +174,7 @@
     }
 
     &-material {
-        
+
         .description {
             max-height: 180px;
             overflow: auto;
@@ -182,9 +191,58 @@
             @include desktop {
                 width: 100%;
             }
-            .configure{
-                .title{
-                    font-size: 24px;
+
+            .configure {
+                position: relative;
+
+                &-text {
+                    .title {
+                        font-size: 24px;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        cursor: pointer;
+                        position: relative;
+
+                        &:hover .configure-text-tooltip {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+
+                    &-tooltip {
+                        font-family: 'Satoshi Regular';
+                        font-size: 13px;
+                        font-weight: 400;
+                        position: absolute;
+                        visibility: hidden;
+                        width: 300px;
+                        background-color: #616161e5;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 5px 4px;
+                        z-index: 1;
+                        top: -62px;
+                        right: -132px;
+                        opacity: 1;
+                        transition: opacity 0.3s;
+                        filter: drop-shadow(none) !important;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -13px;
+                            left: 50%;
+                            margin-left: -20px;
+                            border-width: 7px;
+                            border-style: solid;
+                            border-color: #555 transparent transparent transparent;
+                            // transform: rotate(180deg);
+                        }
+                    }
+
                 }
             }
 
@@ -193,7 +251,7 @@
                     background-color: $orange-color-25;
                 }
             }
-            
+
 
         }
 
@@ -252,40 +310,47 @@
             }
         }
     }
-    .start-btn{
-        &__text{
-            p{
+
+    .start-btn {
+        &__text {
+            p {
                 font-size: 14px;
             }
         }
-        .circle{
+
+        .circle {
             width: 20px;
             height: 20px;
             background-color: $blue-color-25;
             border-radius: 50%;
-            &--green{
+
+            &--green {
                 background-color: $green-color;
             }
         }
     }
-    &-output{
+
+    &-output {
         // border: 2px solid red;
-        
-        &__result{
-            &__number{
+
+        &__result {
+            &__number {
+
                 // width: 30%;
-                .score{
-                    &-number{
+                .score {
+                    &-number {
                         font-size: 72px;
                         line-height: 56px;
                     }
                 }
             }
-            .result-text{
+
+            .result-text {
                 width: 40%;
                 max-height: 180px;
                 overflow: auto;
-                @include laptop{
+
+                @include laptop {
                     width: 100%;
                 }
             }

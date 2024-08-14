@@ -247,6 +247,33 @@ a:focus, a:hover, a:active {
 .button-chips:active {
   transform: scale(0.9);
 }
+.button-rounded {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #FF7700 60%, #ff5c00 93%);
+  font-family: "Satoshi Regular";
+  background-size: 200%;
+  transition: 0.5s;
+  padding: 11px 30px 11px 30px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-position: right;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.button-rounded:not(:disabled):active {
+  transform: translateY(0.1rem);
+}
+.button-rounded:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 21px 21px 20px -17px rgba(15, 29, 43, 0.5019607843);
+  background-position: left;
+}
 
 .section {
   padding-top: 80px;
@@ -706,7 +733,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .sidebar li a:is(:hover, :active, .active) {
-  background: #ff5c00;
+  background: #FF7700;
 }
 
 .sidebar li a .links_name {
@@ -826,7 +853,6 @@ input[type=number]::-webkit-inner-spin-button {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(30, 58, 87, 0.7490196078);
@@ -835,13 +861,13 @@ input[type=number]::-webkit-inner-spin-button {
   mix-blend-mode: multiply;
 }
 .banner__content--heading {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi Regular";
 }
 .banner__content--heading h1 {
   font-size: 62px;
   text-align: center;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media (max-width: 1399px) {
   .banner__content--heading h1 {
@@ -1558,8 +1584,49 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
   }
 }
-.language-material--left .configure .title {
+.language-material--left .configure {
+  position: relative;
+}
+.language-material--left .configure-text .title {
   font-size: 24px;
+}
+.language-material--left .configure-text i {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.language-material--left .configure-text i:hover .configure-text-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.language-material--left .configure-text-tooltip {
+  font-family: "Satoshi Regular";
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(97, 97, 97, 0.8980392157);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 4px;
+  z-index: 1;
+  top: -62px;
+  right: -132px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  filter: drop-shadow(none) !important;
+}
+.language-material--left .configure-text-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 .language-material--left textarea.form-control:disabled {
   background-color: #fff5ef;
