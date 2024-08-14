@@ -19,33 +19,13 @@
         mix-blend-mode: multiply;
     }
     &__content{
-        // width: 750px;
-        // border-width: 2px;
-        // border-style: solid;
-        // box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15);
-        // background-color: rgba(255, 255, 255, 0.15);
-        // border-image: linear-gradient(to right, rgb(255 201 150)  0%, rgba(225, 225, 225, 1) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
-        // backdrop-filter: blur(8.649999618530273px);
-        // padding-block: 16px 40px;
-        // padding-inline: 8px;
-        // border-radius: 12px;
-        // @include laptop{
-        //     // padding-block: 10px 30px;
-        //     padding-inline: 10px;
-        //     width: 100%;
-        // }
         &--heading{
-            // background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
-            // -webkit-text-fill-color: transparent;
-            // background-clip: text;
+            font-family: 'Satoshi', sans-serif;
             h1{
-                font-family: "Playfair Display", serif;
-                // font-family: 'Satoshi', sans-serif;
                 font-size: 62px;
                 text-align: center;
                 color: white;
                 font-weight: 400;
-                // color: black;
                 @include large-screen{
                     font-size: 58px;
                 }
