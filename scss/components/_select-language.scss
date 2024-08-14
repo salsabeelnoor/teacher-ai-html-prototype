@@ -210,7 +210,6 @@
                             opacity: 1;
                         }
                     }
-
                     &-tooltip {
                         font-family: 'Satoshi Regular';
                         font-size: 13px;
@@ -225,7 +224,7 @@
                         padding: 5px 4px;
                         z-index: 1;
                         top: -62px;
-                        right: -132px;
+                        right: -156px;
                         opacity: 1;
                         transition: opacity 0.3s;
                         filter: drop-shadow(none) !important;
@@ -233,7 +232,7 @@
                         &::before {
                             content: "";
                             position: absolute;
-                            bottom: -13px;
+                            bottom: -12px;
                             left: 50%;
                             margin-left: -20px;
                             border-width: 7px;
