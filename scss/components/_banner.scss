@@ -1,27 +1,39 @@
 .banner{
-    background-image: linear-gradient(to bottom, rgb(217 137 96 / 76%), rgb(166 166 166 / 0%)), url('../assets/ai-banner-4.jpeg');
-    // background-image: linear-gradient(to bottom, rgb(217 137 96 / 76%), rgb(166 166 166 / 0%)), url('../assets/banner-img.jpg');
+    background-image: linear-gradient(180deg, rgba(21, 27, 39, 0.50) 0%, rgba(74, 70, 101, 0.50) 55.37%),url('../assets/banner-ai.jpeg');
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1e3a57bf;
+        opacity: 0.8;
+        inset: 0%;
+        mix-blend-mode: multiply;
+    }
     &__content{
-        width: 750px;
-        border-width: 2px;
-        border-style: solid;
-        box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15);
-        background-color: rgba(255, 255, 255, 0.15);
-        border-image: linear-gradient(to right, rgb(255 201 150)  0%, rgba(225, 225, 225, 1) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
-        backdrop-filter: blur(8.649999618530273px);
-        padding-block: 16px 40px;
-        padding-inline: 8px;
-        border-radius: 12px;
-        @include laptop{
-            // padding-block: 10px 30px;
-            padding-inline: 10px;
-            width: 100%;
-        }
+        // width: 750px;
+        // border-width: 2px;
+        // border-style: solid;
+        // box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15);
+        // background-color: rgba(255, 255, 255, 0.15);
+        // border-image: linear-gradient(to right, rgb(255 201 150)  0%, rgba(225, 225, 225, 1) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
+        // backdrop-filter: blur(8.649999618530273px);
+        // padding-block: 16px 40px;
+        // padding-inline: 8px;
+        // border-radius: 12px;
+        // @include laptop{
+        //     // padding-block: 10px 30px;
+        //     padding-inline: 10px;
+        //     width: 100%;
+        // }
         &--heading{
             // background-image: linear-gradient(40deg, #fff, #030022 22%, #8e5151 59%, #194963 90%);
             // -webkit-text-fill-color: transparent;
@@ -33,7 +45,7 @@
                 text-align: center;
                 color: white;
                 font-weight: 400;
-                color: black;
+                // color: black;
                 @include large-screen{
                     font-size: 58px;
                 }
@@ -55,7 +67,7 @@
         &--description{
             width: 559px;
             p{
-                color: black;
+                // color: black;
             }
             @include laptop{
                 width: 100%;

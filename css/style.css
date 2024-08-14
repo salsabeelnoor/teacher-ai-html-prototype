@@ -711,30 +711,25 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .banner {
-  background-image: linear-gradient(to bottom, rgba(217, 137, 96, 0.76), rgba(166, 166, 166, 0)), url("../assets/ai-banner-4.jpeg");
+  background-image: linear-gradient(180deg, rgba(21, 27, 39, 0.5) 0%, rgba(74, 70, 101, 0.5) 55.37%), url("../assets/banner-ai.jpeg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
 }
-.banner__content {
-  width: 750px;
-  border-width: 2px;
-  border-style: solid;
-  box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15);
-  background-color: rgba(255, 255, 255, 0.15);
-  border-image: linear-gradient(to right, rgb(255, 201, 150) 0%, rgb(225, 225, 225) 50%, rgba(255, 255, 255, 0.15) 100%) 1;
-  backdrop-filter: blur(8.6499996185px);
-  padding-block: 16px 40px;
-  padding-inline: 8px;
-  border-radius: 12px;
-}
-@media (max-width: 991px) {
-  .banner__content {
-    padding-inline: 10px;
-    width: 100%;
-  }
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 58, 87, 0.7490196078);
+  opacity: 0.8;
+  inset: 0%;
+  mix-blend-mode: multiply;
 }
 .banner__content--heading h1 {
   font-family: "Playfair Display", serif;
@@ -742,7 +737,6 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: center;
   color: white;
   font-weight: 400;
-  color: black;
 }
 @media (max-width: 1399px) {
   .banner__content--heading h1 {
@@ -770,9 +764,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__content--description {
   width: 559px;
-}
-.banner__content--description p {
-  color: black;
 }
 @media (max-width: 991px) {
   .banner__content--description {
