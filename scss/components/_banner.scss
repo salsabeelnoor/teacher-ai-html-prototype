@@ -37,7 +37,7 @@
         }
         h1 {
             font-family: 'Satoshi Bold';
-            font-size: 60px;
+            font-size: 58px;
             line-height: 66px;
             color: $blue-color-350;
             @include tablet{
@@ -53,6 +53,7 @@
                 animation: slideLeft 1.5s forwards;
                 opacity: 0;
                 transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);            
+                color: $secondary-orange-100;
             }
         }
         .sub-title{

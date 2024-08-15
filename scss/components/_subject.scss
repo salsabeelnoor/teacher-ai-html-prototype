@@ -29,11 +29,12 @@
         }
 
         h1 {
-            font-family: "Satoshi Regular", serif;
+            font-family: "Satoshi Regular";
             letter-spacing: 0.5px;
             padding-bottom: 20px;
+            font-weight: 600;
             margin-bottom: 0;
-            // color: #fff;
+            color: $blue-color-350;
         }
 
         p {

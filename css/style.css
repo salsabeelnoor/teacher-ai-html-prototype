@@ -284,14 +284,15 @@ a:focus, a:hover, a:active {
   }
 }
 .section__header h1 {
-  font-family: "Satoshi Regular", serif;
+  font-family: "Satoshi Regular";
   letter-spacing: 0.5px;
-  color: #fff;
+  font-weight: 600;
+  color: #081f35;
 }
 .section__header p {
   font-size: 16px;
   line-height: 28px;
-  color: #fff;
+  color: #000;
 }
 
 .user-img {
@@ -583,7 +584,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 80px;
   background: #1F4373;
   padding: 6px 14px;
-  z-index: 99;
+  z-index: 101;
   transition: all 0.5s ease;
 }
 .sidebar::-webkit-scrollbar {
@@ -889,7 +890,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__content h1 {
   font-family: "Satoshi Bold";
-  font-size: 60px;
+  font-size: 58px;
   line-height: 66px;
   color: #081f35;
 }
@@ -910,6 +911,7 @@ input[type=number]::-webkit-inner-spin-button {
   animation: slideLeft 1.5s forwards;
   opacity: 0;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: #FF7D33;
 }
 .banner__content .sub-title {
   font-size: 24px;
@@ -1184,10 +1186,12 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .subject__content h1 {
-  font-family: "Satoshi Regular", serif;
+  font-family: "Satoshi Regular";
   letter-spacing: 0.5px;
   padding-bottom: 20px;
+  font-weight: 600;
   margin-bottom: 0;
+  color: #081f35;
 }
 .subject__content p {
   font-size: 16px;
@@ -1218,9 +1222,9 @@ input[type=number]::-webkit-inner-spin-button {
 .faq__content .accordion {
   width: 100%;
   --bs-accordion-bg: transparent;
-  --bs-accordion-color: #fff;
-  --bs-accordion-btn-color: #fff;
-  --bs-accordion-active-color: #fff;
+  --bs-accordion-color: #000;
+  --bs-accordion-btn-color: #000;
+  --bs-accordion-active-color: #000;
   --bs-accordion-active-bg: transparent;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-border-color: #6B9BA9;
@@ -1270,6 +1274,8 @@ input[type=number]::-webkit-inner-spin-button {
 .learn__content h1 {
   font-family: "Satoshi Regular", serif;
   letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #081f35;
 }
 .learn__content p {
   line-height: 28px;
@@ -1405,6 +1411,11 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .top-navbar .toolbar--right a:not(:first-child) {
   padding-left: 20px;
+}
+.top-navbar__header h1 {
+  font-family: "Satoshi Regular";
+  font-weight: 600;
+  color: #081f35;
 }
 .top-navbar--wrapper {
   height: 60px;
