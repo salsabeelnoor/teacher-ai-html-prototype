@@ -24,16 +24,20 @@
     }
 
     &--right {
-      a {
-        font-size: 13px;
-        color: #000;
+      .toolbar-item {
+        p{
+          border-right: 1px solid black;
+          padding-inline: 20px;
+          font-size: 13px;
+          color: #000;
+        }
 
         &:hover {
           text-decoration: underline;
         }
       }
 
-      a:first-child {
+      a:not(:last-child) {
         padding-inline: 20px;
         border-right: 1px solid #000;
       }
@@ -57,169 +61,141 @@
   .navbar-collapse {
     flex-grow: unset;
     height: 100%;
-    .navbar-nav {
+  }
+  .navbar-nav {
+    height: 100%;
+    li {
       height: 100%;
-      li {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        position: relative;
-        a {
-          font-size: 20px;
-          font-weight: 500;
-          color: #000;
-          position: relative;
-          background-color: transparent;
-          transition: all 0.3s ease;
-          border-radius: 6px;
-          padding-left: 12px;
-          padding-right: 12px;
-
-          &:is(:active, .active, :hover) {
-            color: #000;
-            background-color: #f5f5f51f;
-          }
-
-          @include desktop {
-            font-size: 18px;
-          }
-
-          @include mobile {
-            font-size: 14px;
-            padding-left: 12px;
-            padding-right: 12px;
-          }
-        }
-        &.nav-item{
-          &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 5%;
-            width: 0px;
-            height: 3px;
-            background-color: $secondary-orange-100;
-            transition: all 0.5s ease;
-          }
-          &:hover{
-            &::before{
-              width: 85%;
-            }
-          }
-        }
-      }
-
-      .nav-link {
-        font-size: 16px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      a {
         font-weight: 500;
         color: #000;
+        position: relative;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
       }
-
-      .dropdown {
-        &__item {
-          cursor: pointer;
-          position: relative;
-        }
-
-        &__arrow {
-          font-size: 14px;
-          margin-left: 2px;
-          // font-weight: initial;
-          transition: transform .4s;
-        }
-        &__link{
-          color: #000;
-          font-size: 16px;
-          cursor: pointer;
-          padding-block: 6px;
+      &.nav-item{
+        &::before{
+          content: '';
           display: block;
-        }
-        &__menu {
-          max-height: initial;
-          overflow: initial;
           position: absolute;
-          background-color: #fff;
-          list-style: none;
-          box-shadow: 0 1px 5px -1px rgba(0, 0, 0, .3);
-          -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, .3);
-          left: -15px;
-          top: 4.5rem;
-          padding-block: 16px;
-          padding-inline-start: 0;
-          opacity: 0;
-          z-index: 10;
-          pointer-events: none;
-          transition: opacity .3s, top .3s;
-          &--lg{
-            min-width: 280px;
-          }
-          &--sm{
-            min-width: 200px;
-          }
-          li{
-            padding-inline: 16px;
-            &:hover{
-              a{
-                color: $secondary-orange-100;
-              }
-            }
-          }
+          top: 0;
+          left: 5%;
+          width: 0px;
+          height: 3px;
+          background-color: $secondary-orange-100;
+          transition: all 0.5s ease;
         }
-
-        // Show dropdown menu
-        &__item:hover {
-          .dropdown__arrow{
-            transform: rotate(180deg)
+        &:hover{
+          &::before{
+            width: 85%;
           }
-          .dropdown__menu {
-            opacity: 1;
-            top: 3.5rem;
-            pointer-events: initial;
-            transition: top .3s;
-          }
-        }
-      }
-
-      &.inner-page {
-        p {
-          color: #fff;
-        }
-
-        a {
-          color: #fff;
-
-          &.dropdown-item {
-            color: #000;
-          }
-
-          &:is(:active, .active, :hover) {
-            color: #fff;
-            background-color: #f5f5f51f;
-          }
-        }
-
-        svg {
-          fill: #fff;
         }
       }
     }
 
-    .dropdown {
-      &-menu {
-        --bs-dropdown-bg: #c2d2e2;
+    .nav-link {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+  .dropdown {
+    &__item {
+      cursor: pointer;
+      position: relative;
+    }
+
+    &__arrow {
+      font-size: 14px;
+      margin-left: 2px;
+      // font-weight: initial;
+      transition: transform .4s;
+    }
+    &__link{
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      padding-block: 6px;
+      display: block;
+    }
+    &__menu {
+      max-height: initial;
+      overflow: initial;
+      position: absolute;
+      background-color: #fff;
+      list-style: none;
+      box-shadow: 0 1px 5px -1px rgba(0, 0, 0, .3);
+      -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, .3);
+      left: -15px;
+      top: 4.5rem;
+      padding-block: 16px;
+      padding-inline-start: 0;
+      opacity: 0;
+      z-index: 10;
+      pointer-events: none;
+      transition: opacity .3s, top .3s;
+      &--lg{
+        min-width: 280px;
       }
-
-      &-item {
-        &:hover {
-          background-color: rgb(245 245 245 / 58%);
+      &--sm{
+        min-width: 200px;
+      }
+      li{
+        padding-inline: 16px;
+        a{
+          font-size: 16px;
         }
-
-        &:active {
-          background-color: $orange-color-75;
+        &:hover{
+          a{
+            color: $secondary-orange-100;
+          }
         }
       }
+    }
 
+    // Show dropdown menu
+    &__item:hover {
+      .dropdown__arrow{
+        transform: rotate(180deg)
+      }
+      .dropdown__menu {
+        opacity: 1;
+        top: 3.5rem;
+        pointer-events: initial;
+        transition: top .3s;
+      }
+    }
+  }
+  .dropdown{
+    &-toggle{
+      outline: none;
+      background-color: unset;
+      border: 0 ;
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-right: 1px solid black;
+      &.last{
+        padding-right: 0px;
+        border-right: none;
+      }
+    }
+    &-menu{
+      li a {
+        font-size: 13px;
+        &:active{
+          background-color: inherit;
+        }
+      }
+    }
+    &-menu[data-bs-popper]{
+      left: -37px;
     }
   }
 

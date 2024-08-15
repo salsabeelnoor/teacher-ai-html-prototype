@@ -1,5 +1,6 @@
 .page-banner {
-    background-color: $blue-color-350;
+    // background-color: $blue-color-350;
+    margin-top: 100px;
     height: fit-content;
 
     .wrapper {
@@ -18,7 +19,9 @@
         }
 
         h1 {
-            font-family: "Satoshi Regular", serif;
+            font-family: "Satoshi Regular";
+            font-weight: 600;
+            color: $blue-color-350;
             letter-spacing: 0.5px;
         }
 
