@@ -4,14 +4,14 @@
   }
 
   // border: 2px solid red;
+  // border-bottom: 2px solid $blue-color-350;
   position: fixed;
   top: 0;
   z-index: 10;
   background-color: #fff;
-  // background-color: rgba(255, 255, 255, 0.4);
   transition: all 0.5s ease-in;
   width: -webkit-fill-available;
-
+  box-shadow: 0 1px 5px -2px rgba(42,42,42,.4);
   .toolbar {
     border-bottom: 1px dotted #000;
     padding-block: 16px;

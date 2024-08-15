@@ -1,14 +1,12 @@
 .banner {
     min-height: 75vh;
     width: 100%;
-    background-color: $blue-color-380;
-    background-image: url('../../assets/bg-hero-section.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
     &--wrapper {
-        padding-top: 100px;
+        // padding-top: 100px;
         @include large-screen {
             justify-content: center;
             align-items: center;
@@ -23,8 +21,8 @@
     }
 
     &__content {
-        width: 50%;
-        padding-top: 95px;
+        width: 55%;
+        padding-top: 110px;
         @include large-screen{
             width: 80%;
         }
@@ -39,8 +37,9 @@
         }
         h1 {
             font-family: 'Satoshi Bold';
-            font-size: 52px;
-            line-height: 58px;
+            font-size: 60px;
+            line-height: 66px;
+            color: $blue-color-350;
             @include tablet{
                 line-height: 53px;
                 font-size: 42px;
@@ -56,6 +55,9 @@
                 transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);            
             }
         }
+        .sub-title{
+            font-size: 24px;
+        }
 
         button {
             width: fit-content;
@@ -63,7 +65,8 @@
     }
 
     &__image {
-        width: 50%;
+        width: 45%;
+        padding-top: 98px;
         // height: 600px;
         position: relative;
         @include large-screen {
@@ -94,10 +97,10 @@
             content: '';
             display: block;
             position: absolute;
-            top: 20px;
-            right: 50px;
-            width: 450px;
-            height: 400px;
+            top: 118px;
+            right: 10px;
+            width: 461px;
+            height: 430px;        
             transform: scale(-1, 1);
             background: #495a855e;
             border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;

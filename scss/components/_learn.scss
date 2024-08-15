@@ -1,27 +1,33 @@
-.learn{
-    &__image{
+.learn {
+    &__image {
         width: 30%;
-        @include laptop{
+
+        @include laptop {
             width: 100%;
         }
+
         // border: 2px solid red;
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    &__content{
+
+    &__content {
         width: 40%;
-        @include laptop{
+
+        @include laptop {
             width: 100%;
         }
-        h1{
-            font-family: "Playfair Display", serif;
+
+        h1 {
+            font-family: "Satoshi Regular", serif;
             letter-spacing: 0.5px;
             // color: black;
         }
-        p{
+
+        p {
             line-height: 28px;
         }
     }
