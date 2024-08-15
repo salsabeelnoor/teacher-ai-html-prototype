@@ -42,7 +42,7 @@ p {
 
 /*----------------- anchors general styles ----------------*/
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: inherit;
 
   &:hover {
@@ -55,6 +55,11 @@ a {
     outline: none;
   }
 }
+
+.text-blue-100{
+  color: $blue-color-100;
+}
+
 
 /*-------------------- button styles-------------------------*/
 .btn {

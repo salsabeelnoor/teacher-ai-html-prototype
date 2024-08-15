@@ -177,32 +177,121 @@
     <!-- main content -->
     <main class="home-section">
       <nav id="top-nav" class="top-navbar navbar navbar-expand-lg d-none d-lg-block">
-        <div class="container-fluid justify-content-end">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2 gap-2 gap-lg-3">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link no-bar" href="login.html">Login</a>
-              </li>
-            </ul>
+        <div class="toolbar">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="toolbar--left d-flex gap-3">
+                <p>Contact us:</p>
+                <p>
+                  <i class="fa-solid fa-phone text-blue-100 me-1"></i>
+                  (+88) 1990 6886
+                </p>
+                <p><i class="fa-solid fa-envelope me-1 text-blue-100"></i>
+                  contact@thimpress.com
+                </p>
+              </div>
+              <div class="toolbar--right d-flex">
+                <a href="#" class="toolbar-link">Register</a>
+                <a href="#" class="toolbar-link">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="top-navbar--wrapper w-100 d-flex align-items-center justify-content-between">
+            <div class="top-nav__header">
+              <h1 class="text-black">TeacherAI.</h1>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 gap-lg-3">
+                <li class="nav-item dropdown__item ">
+                  <div class="nav-link">
+                    Classes <i class="fa-solid fa-chevron-down dropdown__arrow"></i>
+                    <ul class="dropdown__menu dropdown__menu--lg">
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Languages
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          History
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Mathematics
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Physics
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Biology
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Chemistry
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Art and Design
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          Info Computing Tech
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown__item">
+                  <div class="nav-link">
+                    Pages <i class="fa-solid fa-chevron-down dropdown__arrow"></i>
+                    <ul class="dropdown__menu dropdown__menu--sm">
+                      <li>
+                        <a href="#" class="dropdown__link">
+                          About
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link no-bar" href="login.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link no-bar" href="login.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link no-bar" href="login.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link no-bar" href="login.html">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
       <!-- banner -->
-      <div class="banner d-flex  align-items-center">
+      <div class="banner d-flex  align-items-center" style="margin-top: 100px;">
         <div class="container">
-          <div class="banner--wrapper d-flex flex-column flex-xxl-row justify-content-center align-items-center">
+          <div class="banner--wrapper d-flex flex-column flex-xxl-row">
             <div class="banner__content">
-              <p>For Professional Teaching</p>
-              <h1 class="pb-2 animation d-none d-xxl-block">Accelerate Your Teaching Career With <span class="">TeacherAI.</span></h1>
-              <h1 class="pb-2 animation d-block d-xxl-none animated animated--1s fadeInUp">Accelerate Your Teaching Career With TeacherAI.</h1>
-              <span class="d-block text-sm mb-2 animated animated--1s fadeInUp">Generative AI platform for
-                Teachers</span>
+              <p>Simplify your life</p>
+              <h1 class="pb-2 d-none d-xxl-block">Accelerate Your Teaching With <span class="">TeacherAI.</span></h1>
+              <h1 class="pb-2 animation d-block d-xxl-none animated animated--1s fadeInUp">Accelerate Your Teaching
+                Career With TeacherAI.</h1>
+              <span class="d-block text-sm mb-4 animated animated--1s fadeInUp">Generate teaching material to your needs
+                with just a few clicks.</span>
               <button class="button-rounded animated animated--2s fadeInUp">Get Started</button>
             </div>
             <div class="banner__image">
@@ -472,7 +561,7 @@
 
   <!-- footer nav min js -->
   <script src="js/footer-nav.js"></script>
-  <script src="js/animation.js"></script>
+  <!-- <script src="js/animation.js"></script> -->
   <script src="js/sidebar-new.js"></script>
 </body>
 

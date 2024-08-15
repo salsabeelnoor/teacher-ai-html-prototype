@@ -146,7 +146,7 @@ p {
 
 /*----------------- anchors general styles ----------------*/
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: inherit;
 }
 a:hover {
@@ -154,6 +154,10 @@ a:hover {
 }
 a:focus, a:hover, a:active {
   outline: none;
+}
+
+.text-blue-100 {
+  color: #6B9BA9;
 }
 
 /*-------------------- button styles-------------------------*/
@@ -249,7 +253,7 @@ a:focus, a:hover, a:active {
 }
 .button-rounded {
   background-color: transparent;
-  background-image: linear-gradient(90deg, #FF7700 60%, #ff5c00 93%);
+  background-image: linear-gradient(90deg, #FF7D33 60%, #ff5c00 93%);
   font-family: "Helvetica";
   background-size: 200%;
   transition: 0.5s;
@@ -724,7 +728,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .sidebar li a:is(:hover, :active, .active) {
-  background: #FF7700;
+  background: #FF7D33;
 }
 
 .sidebar li a .links_name {
@@ -832,7 +836,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .banner {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   background-color: #031425;
   background-image: url("../../assets/bg-hero-section.svg");
@@ -845,6 +849,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 1399px) {
   .banner--wrapper {
+    justify-content: center;
+    align-items: center;
     padding-top: 123px;
   }
 }
@@ -860,6 +866,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__content {
   width: 50%;
+  padding-top: 95px;
 }
 @media (max-width: 1399px) {
   .banner__content {
@@ -874,6 +881,11 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 991px) {
   .banner__content {
     width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .banner__content {
+    padding-block: 80px;
   }
 }
 .banner__content h1 {
@@ -904,7 +916,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__image {
   width: 50%;
-  height: 600px;
   position: relative;
 }
 @media (max-width: 1399px) {
@@ -939,10 +950,10 @@ input[type=number]::-webkit-inner-spin-button {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  right: 0;
-  width: 500px;
-  height: 500px;
+  top: 20px;
+  right: 50px;
+  width: 450px;
+  height: 400px;
   transform: scale(-1, 1);
   background: rgba(73, 90, 133, 0.368627451);
   border-radius: 24% 76% 35% 65%/27% 36% 64% 73%;
@@ -1361,26 +1372,64 @@ input[type=number]::-webkit-inner-spin-button {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
   transition: all 0.5s ease-in;
   width: -webkit-fill-available;
 }
+.top-navbar.navbar {
+  --bs-navbar-padding-y: 0px;
+}
+.top-navbar .toolbar {
+  border-bottom: 1px dotted #000;
+  padding-block: 16px;
+}
+.top-navbar .toolbar--left p {
+  font-size: 13px;
+  color: #000;
+}
+.top-navbar .toolbar--right a {
+  font-size: 13px;
+  color: #000;
+}
+.top-navbar .toolbar--right a:hover {
+  text-decoration: underline;
+}
+.top-navbar .toolbar--right a:first-child {
+  padding-inline: 20px;
+  border-right: 1px solid #000;
+}
+.top-navbar .toolbar--right a:not(:first-child) {
+  padding-left: 20px;
+}
+.top-navbar--wrapper {
+  height: 60px;
+}
 .top-navbar .navbar-collapse {
   flex-grow: unset;
+  height: 100%;
+}
+.top-navbar .navbar-collapse .navbar-nav {
+  height: 100%;
+}
+.top-navbar .navbar-collapse .navbar-nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .top-navbar .navbar-collapse .navbar-nav li a {
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   position: relative;
   background-color: transparent;
   transition: all 0.3s ease;
   border-radius: 6px;
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .top-navbar .navbar-collapse .navbar-nav li a:is(:active, .active, :hover) {
-  color: #fff;
+  color: #000;
   background-color: rgba(245, 245, 245, 0.1215686275);
 }
 @media (max-width: 1199px) {
@@ -1391,8 +1440,82 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 575px) {
   .top-navbar .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    padding-inline: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
+}
+.top-navbar .navbar-collapse .navbar-nav li.nav-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 0px;
+  height: 3px;
+  background-color: #FF7D33;
+  transition: all 0.5s ease;
+}
+.top-navbar .navbar-collapse .navbar-nav li.nav-item:hover::before {
+  width: 85%;
+}
+.top-navbar .navbar-collapse .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__item {
+  cursor: pointer;
+  position: relative;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__arrow {
+  font-size: 14px;
+  margin-left: 2px;
+  transition: transform 0.4s;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__link {
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  padding-block: 6px;
+  display: block;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__menu {
+  max-height: initial;
+  overflow: initial;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);
+  left: -15px;
+  top: 4.5rem;
+  padding-block: 16px;
+  padding-inline-start: 0;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.3s, top 0.3s;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__menu--lg {
+  min-width: 280px;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__menu--sm {
+  min-width: 200px;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__menu li {
+  padding-inline: 16px;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__menu li:hover a {
+  color: #FF7D33;
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__item:hover .dropdown__arrow {
+  transform: rotate(180deg);
+}
+.top-navbar .navbar-collapse .navbar-nav .dropdown__item:hover .dropdown__menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+  transition: top 0.3s;
 }
 .top-navbar .navbar-collapse .navbar-nav.inner-page p {
   color: #fff;
