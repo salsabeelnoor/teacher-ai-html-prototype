@@ -122,19 +122,19 @@
     }
     &__card{
         &:nth-child(1):before {
-            background-image: url('../../assets/ai-text-5.png');
+            background-image: url('../../assets/study-materials.jpg');
         }
         &:nth-child(2):before {
-            background-image: url('../../assets/ai-image.jpg');
+            background-image: url('../../assets/study-acitvities.jpg');
         }
         &:nth-child(3):before {
-            background-image: url('../../assets/audio-ai.png');
+            background-image: url('../../assets/conversations.jpg');
         }
         &:nth-child(4):before {
-            background-image: url('../../assets/pronunciation.jpeg');
+            background-image: url('../../assets/evaluation.jpg');
         }
         &:nth-child(5):before {
-            background-image: url('../../assets/conversation.png');
+            background-image: url('../../assets/diversity.jpg');
         }
     }
 

@@ -357,7 +357,7 @@ a:focus, a:hover, a:active {
 }
 
 .page-section {
-  padding-top: 48px;
+  padding-top: 40px;
 }
 
 .gap-100 {
@@ -892,6 +892,10 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: "Satoshi Bold";
   font-size: 58px;
   line-height: 66px;
+  display: inline-block;
+  animation: slideLeft 1.5s forwards;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   color: #081f35;
 }
 @media (max-width: 767px) {
@@ -907,10 +911,6 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .banner__content h1 span {
-  display: inline-block;
-  animation: slideLeft 1.5s forwards;
-  opacity: 0;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   color: #FF7D33;
 }
 .banner__content .sub-title {
@@ -961,7 +961,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 461px;
   height: 430px;
   transform: scale(-1, 1);
-  background: rgba(73, 90, 133, 0.368627451);
+  background: #8da6c6;
   border-radius: 24% 76% 35% 65%/27% 36% 64% 73%;
   z-index: 1;
 }
@@ -1089,19 +1089,19 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 1rem;
 }
 .features__card:nth-child(1):before {
-  background-image: url("../../assets/ai-text-5.png");
+  background-image: url("../../assets/study-materials.jpg");
 }
 .features__card:nth-child(2):before {
-  background-image: url("../../assets/ai-image.jpg");
+  background-image: url("../../assets/study-acitvities.jpg");
 }
 .features__card:nth-child(3):before {
-  background-image: url("../../assets/audio-ai.png");
+  background-image: url("../../assets/conversations.jpg");
 }
 .features__card:nth-child(4):before {
-  background-image: url("../../assets/pronunciation.jpeg");
+  background-image: url("../../assets/evaluation.jpg");
 }
 .features__card:nth-child(5):before {
-  background-image: url("../../assets/conversation.png");
+  background-image: url("../../assets/diversity.jpg");
 }
 
 @media (hover: hover) and (min-width: 600px) {
@@ -1612,6 +1612,9 @@ input[type=number]::-webkit-inner-spin-button {
   object-fit: cover;
 }
 
+.language {
+  margin-top: 114px;
+}
 .language-select select.form-select {
   width: 150px;
 }
@@ -1941,7 +1944,7 @@ input[type=number]::-webkit-inner-spin-button {
 @keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(150px);
   }
   to {
     opacity: 1;
