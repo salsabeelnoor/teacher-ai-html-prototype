@@ -4,7 +4,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    margin-top: 100px;
+    @include laptop{
+        margin-top: 11px;
+    }
     &--wrapper {
         // padding-top: 100px;
         @include large-screen {
@@ -12,11 +15,11 @@
             align-items: center;
             padding-top: 123px;
         }
-        @include laptop{
-            padding-top:100px;
+        @include desktop{
+            padding-top: 95px;
         }
         @include mobile{
-            padding-top: 0px;
+            padding-block: 80px;
         }
     }
 
@@ -25,25 +28,26 @@
         padding-top: 110px;
         @include large-screen{
             width: 80%;
+            padding-top: 0px;
         }
         @include desktop{
             width: 90%;
+            
         }
         @include laptop{
             width: 100%;
-        }
-        @include mobile{
-            padding-block: 80px;
         }
         h1 {
             font-family: 'Satoshi Bold';
             font-size: 58px;
             line-height: 66px;
-            display: inline-block;
-            animation: slideLeft 1.5s forwards;
-            opacity: 0;
-            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  
             color: $blue-color-350;
+            &.slide-animation{
+                display: inline-block;
+                animation: slideLeft 1.5s forwards;
+                opacity: 0;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  
+            }
             @include tablet{
                 line-height: 53px;
                 font-size: 42px;
@@ -72,13 +76,18 @@
         position: relative;
         @include large-screen {
             width: 70%;
+            padding-top: 0px;
+        }
+        @include desktop {
+            width: 80%;
         }
         @include laptop {
             width: 90%;
         }
         @include tablet {
-            width: 75%;
+            width: 86%;
             height: 450px;
+            padding-top: 0px;
         }
         @include mobile{
             display: none;
@@ -98,7 +107,7 @@
             content: '';
             display: block;
             position: absolute;
-            top: 118px;
+            top: 108px;
             right: 10px;
             width: 461px;
             height: 430px;        
@@ -106,7 +115,12 @@
             background: #8da6c6;
             border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
             z-index: 1;
-            
+            @include desktop{
+                top: 30px;
+                right: 30px;
+                width: 400px;
+                height: 400px;
+            }
             @include tablet{
                 top: 30px;
                 right: -30px;

@@ -1,0 +1,167 @@
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 49;
+    background-color: #fff;
+    box-shadow: 0 1px 5px -2px rgba(42, 42, 42, .4);
+
+    .navbar-nav {
+        li {
+            a {
+                color: #000;
+
+                &:is(:active, .active, :hover) {
+                    // color: $orange-color-300;
+                    // border-right: 5px solid $orange-color-200;
+                }
+
+                @include mobile {
+                    font-size: 14px;
+                    padding-inline: 2px;
+                }
+            }
+        }
+
+        .dropdown {
+            &-menu {
+                --bs-dropdown-bg: #c2d2e2;
+            }
+
+            &-item {
+                &:hover {
+                    background-color: rgb(245 245 245 / 58%);
+                }
+
+                &:is(:active, :focus) {
+                    background-color: $orange-color-75;
+                }
+            }
+        }
+    }
+
+    &__button {
+        width: 35px;
+        height: 35px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .offcanvas {
+        background-color: #1F4373;
+
+        &-title {
+            width: 100%;
+        }
+
+        &-body {
+            overflow-y: auto;
+            background: #1F4373;
+            min-height: 100vh;
+
+            .accordion {
+                --bs-accordion-color: #fff;
+                --bs-accordion-bg: transparent;
+                --bs-accordion-border-width: 0px;
+                --bs-accordion-btn-padding-x: 30px;
+                --bs-accordion-btn-color: #fff;
+                --bs-accordion-active-color: #fff;
+                --bs-accordion-active-bg: #61e7e414;
+                --bs-accordion-body-padding-x: 16px;
+                --bs-accordion-body-padding-y: 0rem;
+
+                &-button {
+                    // border: 2px solid red;
+                    padding: 0px;
+                    padding-block: 10px;
+                    padding-inline: 16.5px;
+                    // margin-block: 8px;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .nav {
+                    &-dropdown {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        &-item {
+                            
+                        }
+
+                        &-link {
+                            display: block;
+                            padding-inline: 16px;
+                            padding-block: 8px;
+                            border-radius: 4px;
+                            &:hover {
+                                background: #61e7e414;
+                            }
+                        }
+                    }
+                }
+            }
+
+            a.nav-link {
+                color: #fff;
+                // margin: 8px 16px;
+                //   background: #11101d;
+                border-radius: 4px;
+                margin-bottom: 0;
+                &:hover {
+                    background: #61e7e414;
+                }
+            }
+
+        }
+
+        &-header {
+
+            button {
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                box-shadow: none;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: #fff;
+                    stroke: #fff;
+                }
+            }
+        }
+
+        &.offcanvas-start {
+            width: 250px;
+        }
+
+    }
+
+    &.on-scroll {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        backdrop-filter: blur(14px);
+        top: -50px;
+        animation: navAnimate 0.5s forwards ease-in;
+    }
+}
+
+.nav-lists-mobile {
+    a.nav-link {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 16px;
+        transition: color, background-color 0.3s ease;
+
+        &.active {
+            color: white;
+            background-color: #61e7e414;
+        }
+    }
+}

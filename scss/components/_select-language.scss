@@ -1,5 +1,8 @@
 .language {
     margin-top: 114px;
+    @include tablet{
+        margin-top: 62px;
+    }
     &-select {
         select.form-select {
             width: 150px;

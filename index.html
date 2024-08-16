@@ -55,12 +55,6 @@
         <div class="d-flex align-items-center justify-content-end gap-3">
           <ul class="navbar-nav d-flex flex-row align-items-center px-0 px-md-2 gap-4">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Login</a>
             </li>
           </ul>
@@ -95,17 +89,72 @@
             </div>
           </div>
           <div class="nav-lists-mobile offcanvas-body d-flex flex-column px-0 pt-0">
-            <a class="d-inline-block py-2 h5 fw-normal" href="index.html">Home</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="language.html">languages</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#intro">About</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#intro">Login</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#js">History</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#fonts">Mathematics</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#colors">Biology</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#icons">Chemistry</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#run-scss">Physics</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#loader">Art and Design</a>
-            <a class="d-inline-block py-2 h5 fw-normal" href="#change-img">Info Computing Tech</a>
+            
+            <a class="d-block h5 fw-normal nav-link" href="index.html">Home</a>
+            <div class="accordion" id="accordionExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapseOne" aria-expanded="true" aria-controls="navCollapseOne">
+                    Classes
+                  </button>
+                </h2>
+                <div id="navCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
+                    <ul class="nav-dropdown">
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Languages</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">History</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Mathematics</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Biology</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Chemistry</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Physics</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Art and Design</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Info Computing Tech</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapseTwo" aria-expanded="true" aria-controls="navCollapseTwo">
+                    Pages
+                  </button>
+                </h2>
+                <div id="navCollapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    <ul class="nav-dropdown">
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="#">Pricing</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="d-block h5 fw-normal nav-link" href="#">Events</a>
+            <a class="d-block h5 fw-normal nav-link" href="#">Blog</a>
+            <a class="d-block h5 fw-normal nav-link" href="#">Shop</a>
+            <a class="d-block h5 fw-normal nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
@@ -226,12 +275,12 @@
       </nav>
 
       <!-- banner -->
-      <div class="banner d-flex  align-items-center" style="margin-top: 100px;">
+      <div class="banner d-flex  align-items-center">
         <div class="container">
           <div class="banner--wrapper d-flex flex-column flex-xxl-row">
             <div class="banner__content">
               <p class="sub-title">Simplify your life</p>
-              <h1 class="pb-2 d-none d-xxl-block">Accelerate your teaching with  <span class="">TeacherAI.</span></h1>
+              <h1 class="pb-2 slide-animation d-none d-xxl-block">Accelerate your teaching with  <span class="">TeacherAI.</span></h1>
               <h1 class="pb-2 animation d-block d-xxl-none animated animated--1s fadeInUp">Accelerate Your Teaching
                 Career With TeacherAI.</h1>
               <span class="d-block text-sm mb-4 animated animated--1s fadeInUp sub-title">Generate teaching material to
