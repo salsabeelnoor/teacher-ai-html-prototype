@@ -52,7 +52,9 @@
 
     .offcanvas {
         background-color: #1F4373;
-
+        border: 2px solid red;
+        overflow-y: auto;
+        min-height: 100vh;
         &-title {
             width: 100%;
         }
@@ -60,7 +62,6 @@
         &-body {
             overflow-y: auto;
             background: #1F4373;
-            min-height: 100vh;
 
             .accordion {
                 --bs-accordion-color: #fff;
