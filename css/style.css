@@ -1707,8 +1707,49 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
   }
 }
-.language-material--left .configure .title {
+.language-material--left .configure {
+  position: relative;
+}
+.language-material--left .configure-text .title {
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  .language-material--left .configure-text .title {
+    font-size: 18px;
+  }
+}
+.language-material--left .configure-text i {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.language-material--left .configure-text i:hover .configure-text-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.language-material--left .configure-text-tooltip {
+  font-family: "Satoshi Regular";
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(97, 97, 97, 0.8980392157);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 4px;
+  z-index: 1;
+  top: -57px;
+  right: -132px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  filter: drop-shadow(none) !important;
+}
+@media (max-width: 767px) {
+  .language-material--left .configure-text-tooltip {
+    right: -60px;
+  }
 }
 .language-material--left textarea.form-control:disabled {
   background-color: #fff5ef;
@@ -1728,17 +1769,20 @@ input[type=number]::-webkit-inner-spin-button {
   width: 150px;
   color: #000;
 }
+@media (max-width: 575px) {
+  .language-material--right .field label {
+    max-width: 22%;
+    font-size: 14px;
+  }
+}
 .language-material--right .field select,
 .language-material--right .field input {
   max-width: 250px;
 }
-.language-material--right .field .width-auto {
-  width: fit-content;
-  max-width: 390px;
-}
 @media (max-width: 575px) {
-  .language-material--right .field .width-auto {
-    max-width: 206px;
+  .language-material--right .field select,
+  .language-material--right .field input {
+    max-width: 75%;
   }
 }
 .language-material--right .field.checkbox .form-check label {

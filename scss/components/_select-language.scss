@@ -50,12 +50,6 @@
         &:focus {
             box-shadow: 0 0 4px 1px $blue-color-50;
         }
-
-        // option {
-        //     &:hover {
-        //         box-shadow: 0 0 10px 100px #18a830 inset;
-        //     }
-        // }
     }
 
     &__flag {
@@ -186,9 +180,51 @@
             @include desktop {
                 width: 100%;
             }
-            .configure{
-                .title{
-                    font-size: 24px;
+            .configure {
+                position: relative;
+
+                &-text {
+                    .title {
+                        font-size: 24px;
+                        @include tablet{
+                            font-size: 18px;
+                        }
+                    }
+
+                    i {
+                        font-size: 20px;
+                        cursor: pointer;
+                        position: relative;
+
+                        &:hover .configure-text-tooltip {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+
+                    &-tooltip {
+                        font-family: 'Satoshi Regular';
+                        font-size: 13px;
+                        font-weight: 400;
+                        position: absolute;
+                        visibility: hidden;
+                        width: 300px;
+                        background-color: #616161e5;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 5px 4px;
+                        z-index: 1;
+                        top: -57px;
+                        right: -132px;
+                        opacity: 1;
+                        transition: opacity 0.3s;
+                        filter: drop-shadow(none) !important;
+                        @include tablet{
+                            right: -60px;
+                        }
+                    }
+
                 }
             }
 
@@ -216,21 +252,28 @@
                 label {
                     width: 150px;
                     color: #000;
+                    @include mobile{
+                        max-width: 22%;
+                        font-size: 14px;
+                    }
                 }
 
                 select,
                 input {
                     max-width: 250px;
-                }
-
-                .width-auto {
-                    width: fit-content;
-                    max-width: 390px;
-
-                    @include mobile {
-                        max-width: 206px;
+                    @include mobile{
+                        max-width: 75%;
                     }
                 }
+
+                // .width-auto {
+                //     width: fit-content;
+                //     max-width: 390px;
+
+                //     @include mobile {
+                //         max-width: 206px;
+                //     }
+                // }
 
                 &.checkbox {
                     .form-check {
