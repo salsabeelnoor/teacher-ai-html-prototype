@@ -1751,6 +1751,12 @@ input[type=number]::-webkit-inner-spin-button {
     right: -60px;
   }
 }
+@media (max-width: 575px) {
+  .language-material--left .configure-text-tooltip {
+    top: -68px;
+    right: 0px;
+  }
+}
 .language-material--left textarea.form-control:disabled {
   background-color: #fff5ef;
 }

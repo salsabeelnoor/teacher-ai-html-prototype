@@ -223,6 +223,10 @@
                         @include tablet{
                             right: -60px;
                         }
+                        @include mobile{
+                            top: -68px;
+                            right: 0px;
+                        }
                     }
 
                 }
