@@ -62,6 +62,9 @@
         }
         .sub-title{
             font-size: 24px;
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         button {
