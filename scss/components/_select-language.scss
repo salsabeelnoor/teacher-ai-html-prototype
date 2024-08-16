@@ -262,6 +262,7 @@
                 input {
                     max-width: 250px;
                     @include mobile{
+                        font-size: 14px;
                         max-width: 75%;
                     }
                 }
