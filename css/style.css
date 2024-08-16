@@ -776,7 +776,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 575px) {
   .banner--wrapper {
-    padding-block: 80px;
+    padding-top: 80px;
   }
 }
 .banner__content {
@@ -1659,7 +1659,7 @@ input[type=number]::-webkit-inner-spin-button {
 .language-cards__wrapper {
   border-radius: 12px;
   padding: 8px;
-  background-color: #c2d2e2;
+  background-color: #1F4373;
   height: 100%;
   transition: all 0.2s ease-in;
 }
