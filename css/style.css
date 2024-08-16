@@ -811,7 +811,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__content h1.slide-animation {
   display: inline-block;
-  animation: slideLeft 1.1s forwards;
+  animation: slideLeft 0.7s forwards;
   opacity: 0;
   transition-timing-function: ease-in;
 }
