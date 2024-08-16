@@ -185,7 +185,7 @@ a:focus, a:hover, a:active {
   padding: 12px 28px;
   border: 1px solid transparent;
   border-radius: 6px;
-  background: #ff5c00;
+  background: #FF7D33;
   color: #000;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in;
@@ -239,7 +239,7 @@ a:focus, a:hover, a:active {
   padding: 5px 14px;
   border-radius: 10px;
   font-size: 14px;
-  background-color: #ff5c00;
+  background-color: #FF7D33;
   font-weight: 400;
   color: #fff;
   font-family: inherit;
@@ -815,7 +815,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .banner__content h1.slide-animation {
   display: inline-block;
-  animation: slideLeft 1.5s forwards;
+  animation: slideLeft 2s forwards;
   opacity: 0;
   transition-timing-function: ease-in;
 }
@@ -2098,7 +2098,7 @@ input[type=number]::-webkit-inner-spin-button {
 @keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateX(450px);
+    transform: translateX(550px);
   }
   to {
     opacity: 1;
