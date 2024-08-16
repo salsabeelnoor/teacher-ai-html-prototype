@@ -48,7 +48,7 @@
                 
                 border: 1px solid $blue-color-100;
                 background-color: #eaeaea;
-                caret-color: #fff; 
+                caret-color: $blue-color-350; 
                 &::placeholder{
                     color: $dark-color-d75;
                 }
