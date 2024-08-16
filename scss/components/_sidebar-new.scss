@@ -40,6 +40,8 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding-left: 16px;
+    gap: 16px;
   }
   .sidebar .logo-details .icon {
     opacity: 0;
@@ -57,6 +59,7 @@
   .sidebar.open .logo-details .icon,
   .sidebar.open .logo-details .logo_name {
     opacity: 1;
+    width: 20px;
   }
   .sidebar .logo-details #btn {
     position: absolute;
@@ -168,6 +171,7 @@
   .sidebar li i {
     // height: 50px;
     // line-height: 50px;
+    width: 20px;
     font-size: 17px;
     // border-radius: 12px;
   }

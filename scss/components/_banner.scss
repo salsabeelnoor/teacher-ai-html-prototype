@@ -53,7 +53,7 @@
             color: $blue-color-350;
             &.slide-animation{
                 display: inline-block;
-                animation: slideLeft 0.7s forwards;
+                animation: slideLeft 1.5s forwards;
                 opacity: 0;
                 transition-timing-function: ease-in;  
             }
