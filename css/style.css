@@ -1780,7 +1780,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 600;
 }
 .language-material--right .field label {
-  width: 150px;
+  max-width: 150px;
   color: #000;
 }
 @media (max-width: 575px) {
@@ -1791,7 +1791,28 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .language-material--right .field select,
 .language-material--right .field input {
-  max-width: 250px;
+  max-width: 400px;
+}
+@media (max-width: 1399px) {
+  .language-material--right .field select,
+  .language-material--right .field input {
+    max-width: 280px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .language-material--right .field select,
+  .language-material--right .field input {
+    max-width: 500px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .language-material--right .field select,
+  .language-material--right .field input {
+    font-size: 14px;
+    max-width: 350px;
+  }
 }
 @media (max-width: 575px) {
   .language-material--right .field select,

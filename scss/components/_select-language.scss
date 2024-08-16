@@ -254,7 +254,7 @@
 
             .field {
                 label {
-                    width: 150px;
+                    max-width: 150px;
                     color: #000;
                     @include mobile{
                         max-width: 22%;
@@ -264,7 +264,21 @@
 
                 select,
                 input {
-                    max-width: 250px;
+                    max-width: 400px;
+                    @include large-screen{
+                        max-width: 280px;
+                        font-size: 14px;
+                        // max-width: 75%;
+                    }
+                    @include desktop{
+                        max-width: 500px;
+                        font-size: 14px;
+                        // max-width: 75%;
+                    }
+                    @include tablet{
+                        font-size: 14px;
+                        max-width: 350px;
+                    }
                     @include mobile{
                         font-size: 14px;
                         max-width: 75%;
