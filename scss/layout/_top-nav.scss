@@ -25,25 +25,22 @@
 
     &--right {
       .toolbar-item {
-        p{
+        p, a{
           border-right: 1px solid black;
-          padding-inline: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
           font-size: 13px;
           color: #000;
         }
-
         &:hover {
           text-decoration: underline;
         }
-      }
-
-      a:not(:last-child) {
-        padding-inline: 20px;
-        border-right: 1px solid #000;
-      }
-
-      a:not(:first-child) {
-        padding-left: 20px;
+        &:last-child a {
+          padding-left: 20px;
+          padding-right: 0;
+          border-right: none;
+        }
+        
       }
     }
   }

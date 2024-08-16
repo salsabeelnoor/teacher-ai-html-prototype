@@ -1,16 +1,19 @@
 .login{
     min-height: 100vh;
-    background-color: $blue-color-350;
+    background-color: #fff;
     
     &__content{
         width: 450px;
+        h1{
+            font-family: 'Satoshi Bold';
+            color: $blue-color-350;
+        }
         @include mobile{
             padding: 0px 16px;
             width: 100%;
         }
         .input{
             width: 80%;
-            
             &-email{
                 position: relative;
                 svg{
@@ -18,8 +21,8 @@
                     top: 50%;
                     transform: translateY(-50%);
                     left: 8px;
-                    stroke: $dark-color-d75;
-                    -webkit-text-stroke-color: $dark-color-d75;
+                    stroke: #777575;
+                    -webkit-text-stroke-color: #777575;
                 }
             }
             &-password{
@@ -32,42 +35,50 @@
                     top: 50%;
                     transform: translateY(-50%);
                     left: 8px;
-                    fill: #fff;
+                    fill: #000;
                 
                 }
             }
             
         }
-        input.form-control{
-            padding-left: 34px;
-            color: #fff;
-            
-            border: 1px solid $blue-color-100;
-            background-color: #031425;
-            caret-color: #fff; 
-            &::placeholder{
-                color: $dark-color-d75;
+        input{
+            &.form-control{
+                padding-left: 34px;
+                color: #000;
+                
+                border: 1px solid $blue-color-100;
+                background-color: #eaeaea;
+                caret-color: #fff; 
+                &::placeholder{
+                    color: $dark-color-d75;
+                }
+            }
+            &.form-check-input{
+                border: 1px solid $blue-color-350;
+                &:focus {
+                    border: 1px solid $blue-color-350;
+                    box-shadow: 0 0 4px 1px $blue-color-50;
+                  }
             }
         }
+
         &-terms{
             p{
                 font-size: 14px;
-                color: $dark-color-d50;
+                color: $dark-color-d200;
                 a{
                     position: relative;
                     border-bottom: 1px solid ;
                     transition: color 0.2s ease;
                     // transform: translateY(-1px);
-                    color: rgb(13,202,240);
                     &:hover{
-                        color: white;
+                        color: #1b6ee0;
                     }
                 }
             }
         }
         &__button{
             width: 80%;
-            // border: 2px solid red;
             button{
                 padding: 8px 0px;
                 width: 100%;
