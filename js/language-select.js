@@ -1,5 +1,4 @@
 const selectBtn = document.getElementById('select-btn');
-// const selectCatText = document.getElementById('select-cat-text');
 const infoBtn = document.getElementById('info-btn');
 const description = document.getElementById('description-box');
 const languageMaterial = document.getElementById('language-material');
@@ -10,7 +9,6 @@ const startCircle = document.querySelectorAll('.circle');
 const assessmentBtn = document.getElementById('assessment-btn');
 
 const startBtn2 = document.getElementById('start-btn2');
-// const startCircle2 = document.querySelector('.circle');
 const assessmentBtn2 = document.getElementById('assessment-btn2');
 
 console.log(startCircle)
