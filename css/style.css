@@ -64,6 +64,10 @@
 /*----------------------- base files --------------------------*/
 /*------------------------ Merriweather and open sans -------------------------*/
 /*-------------------- general styles-------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1301,31 +1305,12 @@ input[type=number]::-webkit-inner-spin-button {
 .top-navbar .dropdown-menu li a {
   font-size: 13px;
 }
-.top-navbar .dropdown-menu li a:active {
-  background-color: inherit;
+.top-navbar .dropdown-menu li a:is(:hover, :active) {
+  background-color: #eff1f4;
+  color: #000;
 }
 .top-navbar .dropdown-menu[data-bs-popper] {
   left: -37px;
-}
-.top-navbar.on-scroll {
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(14px);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  top: -50px;
-  animation: navAnimate 0.5s forwards ease-in;
-}
-.top-navbar.on-scroll .navbar-nav.inner-page p {
-  color: #000;
-}
-.top-navbar.on-scroll .navbar-nav.inner-page a {
-  color: #000;
-}
-.top-navbar.on-scroll .navbar-nav.inner-page a:is(:active, .active, :hover) {
-  color: #000;
-  background-color: rgba(245, 245, 245, 0.1215686275);
-}
-.top-navbar.on-scroll .navbar-nav.inner-page svg {
-  fill: #000;
 }
 
 @keyframes navAnimate {
