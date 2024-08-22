@@ -371,6 +371,10 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   padding-left: 13px;
   padding-block: 16px;
+  height: 60px;
+}
+.sidebar .logo-details a {
+  display: none;
 }
 .sidebar .logo-details__image {
   width: clamp(30px, 0.125rem + 0.8333vw, 40px);
@@ -380,6 +384,13 @@ input[type=number]::-webkit-inner-spin-button {
 .sidebar .logo-details__image img {
   width: 100%;
   height: 100%;
+}
+
+.sidebar.open .logo-details {
+  height: auto;
+}
+.sidebar.open .logo-details a {
+  display: flex;
 }
 
 .sidebar .logo-details .logo_name {
@@ -417,10 +428,6 @@ input[type=number]::-webkit-inner-spin-button {
 .sidebar i {
   color: #fff;
   text-align: center;
-}
-
-.sidebar .nav-list {
-  margin-top: 20px;
 }
 
 .sidebar li {
@@ -666,7 +673,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #FF7D33;
 }
 .banner__content .sub-title {
-  font-size: 24px;
+  font-size: 22px;
 }
 @media (max-width: 575px) {
   .banner__content .sub-title {
