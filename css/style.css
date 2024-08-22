@@ -386,13 +386,6 @@ input[type=number]::-webkit-inner-spin-button {
   height: 100%;
 }
 
-.sidebar.open .logo-details {
-  height: auto;
-}
-.sidebar.open .logo-details a {
-  display: flex;
-}
-
 .sidebar .logo-details .logo_name {
   color: #fff;
   font-size: 20px;
@@ -423,6 +416,13 @@ input[type=number]::-webkit-inner-spin-button {
   right: 0;
   transform: translate(0, -50%);
   text-align: right;
+}
+
+.sidebar.open .logo-details {
+  height: auto;
+}
+.sidebar.open .logo-details a {
+  display: flex;
 }
 
 .sidebar i {

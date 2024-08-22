@@ -56,13 +56,6 @@
       }
     }
   }
-  .sidebar.open .logo-details {
-    height: auto;
-    a{
-      display: flex;
-    }
-  }
-
   // .sidebar .logo-details .icon {
   //   opacity: 0;
   //   font-size: 18px;
@@ -96,6 +89,12 @@
     right: 0;
     transform: translate(0, -50%);
     text-align: right;
+  }
+  .sidebar.open .logo-details {
+    height: auto;
+    a{
+      display: flex;
+    }
   }
   .sidebar i {
     color: #fff;
