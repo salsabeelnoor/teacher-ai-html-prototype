@@ -1,0 +1,33 @@
+.change-pass{
+    // border: 2px solid red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    min-width: 400px;
+    padding-block: 24px 32px;
+    @include mobile{
+        padding: 0px 16px;
+        width: 100%;
+    }
+    .field-box{
+        width: 80%;
+        margin: 0px auto;
+        label{
+            font-size: 14px;
+            font-weight: 500;
+            color: $blue-color-350;
+        }
+        input.form-control{
+            color: #000;
+            border: 1px solid $blue-color-100;
+            background-color: #fff;
+            caret-color: $blue-color-350; 
+            &::placeholder{
+                color: $dark-color-d75;
+            }
+            &:focus {
+                box-shadow: 0 0 4px 1px $blue-color-50; //#e79b9b
+              }
+        }
+
+    }
+
+}

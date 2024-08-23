@@ -36,7 +36,9 @@ body {
     background: $primary-white-400;
   }
 }
-
+.satoshi{
+  font-family: 'Satoshi Regular';
+}
 
 p {
   margin-bottom: 0px !important;
@@ -253,10 +255,8 @@ a {
 input.form-control,
 select,
 textarea.form-control {
-  border: 1px solid $orange-color-200;
 
   &:focus {
-    border: 1px solid $orange-color-200;
     box-shadow: 0 0 4px 1px $blue-color-50;
   }
 }
