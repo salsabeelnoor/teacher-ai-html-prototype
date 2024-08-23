@@ -34,6 +34,7 @@
     width: calc(100% - 250px);
     @include laptop{
       width: 100%;
+      left: 0px;
   }
   }
   .sidebar .logo-details {
@@ -238,6 +239,7 @@
     transition: all 0.5s ease;
     @include laptop{
         width: 100%;
+        left: 0px;
     }
   }
 

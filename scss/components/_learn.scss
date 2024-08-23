@@ -1,7 +1,9 @@
 .learn {
     &__image {
         width: 30%;
-
+        @include desktop{
+            width: 40%;
+        }
         @include laptop {
             width: 100%;
         }
@@ -16,7 +18,6 @@
 
     &__content {
         width: 40%;
-
         @include laptop {
             width: 100%;
         }
@@ -26,6 +27,9 @@
             letter-spacing: 0.5px;
             font-weight: 600;
             color: $blue-color-350;
+            @include desktop{
+                font-size: 32px;
+            }
         }
 
         p {

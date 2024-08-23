@@ -362,6 +362,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 991px) {
   .sidebar.open ~ .home-section {
     width: 100%;
+    left: 0px;
   }
 }
 
@@ -585,6 +586,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 991px) {
   .home-section {
     width: 100%;
+    left: 0px;
   }
 }
 
@@ -1032,6 +1034,11 @@ input[type=number]::-webkit-inner-spin-button {
 .learn__image {
   width: 30%;
 }
+@media (max-width: 1199px) {
+  .learn__image {
+    width: 40%;
+  }
+}
 @media (max-width: 991px) {
   .learn__image {
     width: 100%;
@@ -1055,6 +1062,11 @@ input[type=number]::-webkit-inner-spin-button {
   letter-spacing: 0.5px;
   font-weight: 600;
   color: #081f35;
+}
+@media (max-width: 1199px) {
+  .learn__content h1 {
+    font-size: 32px;
+  }
 }
 .learn__content p {
   line-height: 28px;
