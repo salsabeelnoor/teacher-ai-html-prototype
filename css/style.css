@@ -582,6 +582,7 @@ input[type=number]::-webkit-inner-spin-button {
   z-index: 2;
   left: 80px;
   transition: all 0.5s ease;
+  margin-top: 52px;
 }
 @media (max-width: 991px) {
   .home-section {
@@ -601,11 +602,11 @@ input[type=number]::-webkit-inner-spin-button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 58px;
 }
 @media (max-width: 991px) {
   .banner {
-    margin-top: 11px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 1399px) {
