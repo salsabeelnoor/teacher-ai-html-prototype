@@ -1910,35 +1910,51 @@ input[type=number]::-webkit-inner-spin-button {
 
 .change-pass {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  min-width: 400px;
+  width: 400px;
   padding-block: 24px 32px;
 }
+
 @media (max-width: 575px) {
   .change-pass {
-    padding: 0px 16px;
+    padding: 24px 16px;
     width: 100%;
   }
 }
-.change-pass .field-box {
-  width: 80%;
+.change-pass__fields {
+  width: 85%;
   margin: 0px auto;
 }
+
+@media (max-width: 575px) {
+  .change-pass__fields {
+    width: 100%;
+  }
+}
 .change-pass .field-box label {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   color: #081f35;
 }
+
 .change-pass .field-box input.form-control {
   color: #000;
   border: 1px solid #6B9BA9;
   background-color: #fff;
   caret-color: #081f35;
 }
+
 .change-pass .field-box input.form-control::placeholder {
   color: #9e9e9e;
+  font-size: 14px;
 }
+
 .change-pass .field-box input.form-control:focus {
   box-shadow: 0 0 4px 1px #abddf3;
+}
+
+.change-pass .field-box .error-message {
+  font-size: 13px;
+  color: red;
 }
 
 /*--------------------- components files -----------------------*/
