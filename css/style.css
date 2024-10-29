@@ -726,7 +726,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 80vh;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.51) 1%, rgba(0, 0, 0, 0.01) 100%);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.74) 1%, rgba(0, 0, 0, 0.01) 100%);
 }
 .banner-video .background-video-clip {
   position: absolute;
