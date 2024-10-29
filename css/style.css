@@ -721,72 +721,79 @@ input[type=number]::-webkit-inner-spin-button {
     display: none;
   }
 }
-.banner {
-  margin-top: 114px;
-  min-height: 80vh;
-  background-image: linear-gradient(90deg, rgba(28, 35, 37, 0.83) 1%, rgba(89, 47, 0, 0.12) 100%), url("../../assets/banner-demo/banner-5.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner-video {
+  margin-top: 112px;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.51) 1%, rgba(0, 0, 0, 0.01) 100%);
 }
-.banner__content {
+.banner-video .background-video-clip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  min-width: 100%;
+  max-width: 100%;
+}
+.banner-video__content {
   width: 55%;
 }
 @media (max-width: 1399px) {
-  .banner__content {
+  .banner-video__content {
     width: 80%;
     padding-top: 0px;
   }
 }
 @media (max-width: 1199px) {
-  .banner__content {
+  .banner-video__content {
     width: 90%;
   }
 }
 @media (max-width: 991px) {
-  .banner__content {
+  .banner-video__content {
     width: 100%;
   }
 }
-.banner__content h1 {
+.banner-video__content h1 {
   font-size: 58px;
   line-height: 66px;
   color: #fff;
 }
-.banner__content h1.satoshi {
+.banner-video__content h1.satoshi {
   font-family: "Satoshi Bold";
 }
-.banner__content h1.slide-animation {
+.banner-video__content h1.slide-animation {
   display: inline-block;
   animation: slideLeft 2s forwards;
   opacity: 0;
   transition-timing-function: ease-in;
 }
 @media (max-width: 767px) {
-  .banner__content h1 {
+  .banner-video__content h1 {
     line-height: 53px;
     font-size: 42px;
   }
 }
 @media (max-width: 575px) {
-  .banner__content h1 {
+  .banner-video__content h1 {
     font-size: 38px;
     line-height: 53px;
   }
 }
-.banner__content h1 span {
+.banner-video__content h1 span {
   color: #FF7D33;
 }
-.banner__content .sub-title {
+.banner-video__content .sub-title {
   font-size: 22px;
   color: #fff;
 }
 @media (max-width: 575px) {
-  .banner__content .sub-title {
+  .banner-video__content .sub-title {
     font-size: 20px;
   }
 }
-.banner__content button {
+.banner-video__content button {
   width: fit-content;
 }
 
